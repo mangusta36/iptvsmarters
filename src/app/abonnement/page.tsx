@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
-import { CheckCircle, Shield, Clock, Headphones, RefreshCw, CreditCard } from "lucide-react"
+import { CheckCircle, Shield, Clock, Headphones, RefreshCw, CreditCard, Globe, Smartphone, Monitor, Zap, Star, Users, Award, ArrowRight, MessageCircle } from "lucide-react"
+import Link from "next/link"
 import PricingCards from "@/components/PricingCards"
 import FAQAccordion from "@/components/FAQAccordion"
 import SchemaMarkup from "@/components/SchemaMarkup"
@@ -9,32 +10,37 @@ import TrustBadges from "@/components/TrustBadges"
 import { siteConfig, absoluteUrl } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "IPTV Subscription - Premium Plans & Prices",
-  description: "Discover our iptv subscription plans: 1 to 3 devices, prices from £29/month. HD & 4K quality, 25,000+ channels, 100,000+ VOD, 24/7 support for your premium iptv service. Contact us on WhatsApp.",
+  title: "IPTV Subscription - Premium Plans & Prices 2026",
+  description: "IPTV subscription plans from £37/3mo: 25,000+ live channels, 100,000+ VOD movies & series in HD & 4K. Multi-device support, anti-buffer technology, 24/7 support. Start streaming today.",
   openGraph: {
-    title: "IPTV Subscription Premium",
-    description: "Discover our iptv subscription plans: 1 to 3 devices, prices from £29/month.",
+    title: "Premium IPTV Subscription Plans",
+    description: "Choose your IPTV subscription plan: 25,000+ channels, 100,000+ VOD, HD & 4K, multi-device. From £37/3mo.",
     url: absoluteUrl("/abonnement"),
   },
   alternates: { canonical: absoluteUrl("/abonnement") },
 }
 
 const guarantees = [
-  { icon: Shield, title: "Satisfied or Refunded", desc: "7-day guarantee to test our iptv service risk-free." },
-  { icon: Clock, title: "Fast Activation", desc: "Service activated within 24 hours after payment." },
-  { icon: Headphones, title: "24/7 Support", desc: "Technical assistance available 7 days a week." },
-  { icon: RefreshCw, title: "No Commitment", desc: "Cancel anytime, no fees or penalties." },
-  { icon: CreditCard, title: "Secure Payment", desc: "PayPal, bank transfer and cryptocurrencies accepted." },
-  { icon: CheckCircle, title: "Guaranteed Quality", desc: "HD, Full HD and 4K with anti-buffer technology." },
+  { icon: Shield, title: "Satisfied or Refunded", desc: "7-day guarantee to test our IPTV service risk-free. If you are not satisfied, we will refund your payment." },
+  { icon: Clock, title: "Fast Activation", desc: "Service activated within 24 hours after payment confirmation. Most activations happen within 2 hours." },
+  { icon: Headphones, title: "24/7 Support", desc: "Technical assistance available 7 days a week via WhatsApp. Average response time under 30 minutes." },
+  { icon: RefreshCw, title: "No Commitment", desc: "Cancel anytime, no fees or penalties. No long-term contracts. You are in control." },
+  { icon: CreditCard, title: "Secure Payment", desc: "PayPal, bank transfer and cryptocurrencies accepted. Your payment information is always protected." },
+  { icon: CheckCircle, title: "Guaranteed Quality", desc: "HD, Full HD and 4K with anti-buffer technology and 99.9% server uptime for uninterrupted streaming." },
+  { icon: Globe, title: "Works Worldwide", desc: "Use your subscription anywhere in the world. Perfect for travellers, expats and international families." },
+  { icon: Smartphone, title: "All Devices", desc: "Compatible with Smart TV, Fire TV Stick, Android, iOS, Windows, Mac. One subscription covers everything." },
+  { icon: Star, title: "Premium Content", desc: "25,000+ live channels, 100,000+ VOD movies & series. Sports, news, entertainment, kids and more." },
 ]
 
 const faqItems = [
   { question: "How does payment work?", answer: "Payment is made via WhatsApp. We accept PayPal, bank transfer and cryptocurrencies. Once payment is confirmed, you receive your credentials within 24 hours." },
-  { question: "How do I subscribe to a plan?", answer: "Contact us via WhatsApp to choose your offer and receive your login credentials for your iptv subscription." },
-  { question: "Can I change my plan mid-subscription?", answer: "Yes, you can upgrade to a higher plan at any time. The difference will be calculated pro rata." },
-  { question: "Is there a minimum commitment period?", answer: "No, no commitment. You can cancel at any time. Quarterly and annual plans offer a discount." },
+  { question: "How do I subscribe to a plan?", answer: "Contact us via WhatsApp to choose your offer and receive your login credentials for your IPTV subscription." },
+  { question: "Can I change my plan mid-subscription?", answer: "Yes, you can upgrade to a higher plan at any time. The difference will be calculated pro rata. Downgrades take effect at next renewal." },
+  { question: "Is there a minimum commitment period?", answer: "No, no commitment. You can cancel at any time. Quarterly and annual plans offer better value with significant discounts." },
   { question: "What if I have installation problems?", answer: "Our technical support team is available 24/7 to help you via WhatsApp. Installation is guided and only takes a few minutes." },
-  { question: "Can I use my subscription on multiple devices?", answer: "Yes, depending on your plan: 1, 2 or 3 simultaneous connections on different devices." },
+  { question: "Can I use my subscription on multiple devices?", answer: "Yes, depending on your plan: 1, 2 or 3 simultaneous connections on different devices. Each person watches their own channel." },
+  { question: "What channels are included?", answer: "25,000+ live channels across all categories: sports (Premier League, NFL, UFC, F1), movies, 24/7 news, kids, documentaries, music, international channels in 40+ languages." },
+  { question: "Is 4K streaming available?", answer: "Yes, 4K Ultra HD streaming is available for supported channels and VOD content. Requires 25+ Mbps internet connection and a compatible device." },
 ]
 
 const breadcrumbSchema = {
@@ -46,20 +52,31 @@ const breadcrumbSchema = {
   ],
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
+}
+
 export default function AbonnementPage() {
   return (
     <>
       <SchemaMarkup jsonLd={breadcrumbSchema} />
+      <SchemaMarkup jsonLd={faqSchema} />
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               Flexible plans no commitment
             </span>
-            <h1 className="text-4xl font-bold text-white sm:text-5xl">Our IPTV Subscriptions</h1>
+            <h1 className="text-4xl font-bold text-white sm:text-5xl">IPTV Subscription Plans</h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Choose the plan that suits your needs. All our iptv subscriptions include 25,000+ TV channels,
-              100,000+ VOD, 24/7 support and a satisfied or refunded guarantee.
+              Choose the plan that suits your needs. All our IPTV subscriptions include 25,000+ TV channels,
+              100,000+ movies & series on demand, HD & 4K streaming, 24/7 support and a satisfied or refunded guarantee.
             </p>
           </div>
           <div className="mt-8">
@@ -72,8 +89,10 @@ export default function AbonnementPage() {
       </section>
       <section className="py-20 bg-muted/50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-white text-center">Why choose us?</h2>
-          <p className="mt-2 text-muted-foreground text-center">Solid guarantees for your peace of mind.</p>
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold text-white">Why choose doubleclick iptv?</h2>
+            <p className="mt-2 text-muted-foreground">Solid guarantees and premium features for your peace of mind.</p>
+          </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {guarantees.map((g) => (
               <div key={g.title} className="group rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand/30 hover:shadow-xl hover:shadow-brand/5">
@@ -88,6 +107,37 @@ export default function AbonnementPage() {
         </div>
       </section>
       <section className="py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold text-white">What is included in every plan</h2>
+            <p className="mt-2 text-muted-foreground">Every IPTV subscription includes the following features regardless of which plan you choose.</p>
+          </div>
+          <div className="mt-10 max-w-4xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              "25,000+ live TV channels worldwide",
+              "100,000+ movies & series on demand",
+              "HD, Full HD & 4K Ultra HD quality",
+              "Anti-buffer streaming technology",
+              "Electronic Program Guide (EPG)",
+              "7-day catch-up TV & replay",
+              "Xtream Codes API & M3U support",
+              "24/7 technical support via WhatsApp",
+              "Instant activation within 24 hours",
+              "No long-term contracts or commitment",
+              "Works on all devices & platforms",
+              "Regular content updates & additions",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand/10 mt-0.5">
+                  <CheckCircle className="h-3.5 w-3.5 text-brand" />
+                </div>
+                <span className="text-sm text-muted-foreground">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white text-center">Subscription Questions</h2>
           <div className="mt-8">
@@ -96,7 +146,7 @@ export default function AbonnementPage() {
         </div>
       </section>
       <Testimonials />
-      <CTASection title="Ready to join doubleclick iptv?" subtitle="Contact us on WhatsApp to discover our iptv subscription plans." />
+      <CTASection title="Ready to join doubleclick iptv?" subtitle="Contact us on WhatsApp to discover our IPTV subscription plans." />
     </>
   )
 }

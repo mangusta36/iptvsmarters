@@ -1,6 +1,7 @@
 "use client"
 
-import { MessageCircle, Clock, Shield, Zap } from "lucide-react"
+import { MessageCircle, Clock, Shield, Zap, Headphones, Globe, Smartphone, CheckCircle, ArrowRight } from "lucide-react"
+import Link from "next/link"
 import SchemaMarkup from "@/components/SchemaMarkup"
 import FAQAccordion from "@/components/FAQAccordion"
 import CTASection from "@/components/CTASection"
@@ -16,10 +17,19 @@ const breadcrumbSchema = {
 }
 
 const faqItems = [
-  { question: "How can I contact you?", answer: "All support is via WhatsApp at +44 7828 714977. It's the fastest way to get a response within 30 minutes." },
-  { question: "What are your opening hours?", answer: "Our support team is available 24/7. Send us a WhatsApp message anytime." },
-  { question: "How do I get a subscription?", answer: "Contact us directly via WhatsApp at +44 7828 714977 to choose your plan and receive your credentials." },
-  { question: "What is the activation time?", answer: "Your subscription is activated within 24 hours maximum after payment confirmation via WhatsApp." },
+  { question: "How can I contact you?", answer: "All support is via WhatsApp at +44 7828 714977. It is the fastest way to get a response within 30 minutes. We do not currently offer phone or email support." },
+  { question: "What are your opening hours?", answer: "Our support team is available 24/7, 365 days a year. Send us a WhatsApp message anytime and we will respond promptly." },
+  { question: "How do I get a subscription?", answer: "Contact us directly via WhatsApp at +44 7828 714977 to choose your plan and receive your credentials. We will guide you through the process." },
+  { question: "What is the activation time?", answer: "Your subscription is activated within 24 hours maximum after payment confirmation via WhatsApp. Most activations happen within 2 hours." },
+  { question: "Can you help with installation?", answer: "Yes, our support team will guide you step by step through the installation process on any device. Setup takes less than 5 minutes." },
+  { question: "What payment methods do you accept?", answer: "We accept PayPal, bank transfer and cryptocurrencies. All transactions are secure and your information is confidential." },
+]
+
+const supportReasons = [
+  { icon: Zap, title: "New Subscription", desc: "Choose a plan, make payment, receive credentials", color: "text-brand" },
+  { icon: Smartphone, title: "Installation Help", desc: "Step-by-step setup on Smart TV, Fire Stick, phone or PC", color: "text-blue-400" },
+  { icon: Globe, title: "Technical Issue", desc: "Buffering, connection problems, channels not loading", color: "text-rose-400" },
+  { icon: Shield, title: "Account Support", desc: "Password reset, renewal, plan upgrade or cancellation", color: "text-emerald-400" },
 ]
 
 export default function ContactForm() {
@@ -35,8 +45,28 @@ export default function ContactForm() {
             <h1 className="text-4xl font-bold text-white sm:text-5xl">Contact doubleclick iptv</h1>
             <p className="mt-4 text-lg text-muted-foreground">
               A question or technical issue? Our team is available 24/7 - 7 days a week
-              on WhatsApp. It&apos;s the fastest way to reach us.
+              on WhatsApp. It is the fastest way to reach us.
             </p>
+            <p className="mt-2 text-muted-foreground max-w-xl mx-auto">
+              Whether you need a new subscription, installation help, or have a technical problem, our expert support team is ready to assist you within minutes.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto">
+            {supportReasons.map((reason) => {
+              const Icon = reason.icon
+              return (
+                <div key={reason.title} className="rounded-2xl border border-border bg-card p-5 flex items-start gap-4 hover:border-brand/30 transition-all hover:-translate-y-0.5">
+                  <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-muted ${reason.color} [&>svg]:text-brand`}>
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white">{reason.title}</h3>
+                    <p className="text-sm text-muted-foreground">{reason.desc}</p>
+                  </div>
+                </div>
+              )
+            })}
           </div>
 
           <div className="mt-12 mx-auto max-w-2xl">
@@ -76,7 +106,7 @@ export default function ContactForm() {
             <div className="rounded-2xl border border-border bg-card p-6 text-center">
               <Clock className="mx-auto h-8 w-8 text-brand" />
               <h3 className="mt-3 font-semibold text-white">Availability</h3>
-              <p className="mt-1 text-sm text-muted-foreground">24/7 - 7 days a week</p>
+              <p className="mt-1 text-sm text-muted-foreground">24/7 - 365 days a year</p>
               <p className="text-xs text-muted-foreground mt-1">Technical & Sales Support</p>
             </div>
             <div className="rounded-2xl border border-border bg-card p-6 text-center">
@@ -100,6 +130,14 @@ export default function ContactForm() {
           <h2 className="text-2xl font-bold text-white text-center">Frequently Asked Questions</h2>
           <div className="mt-8">
             <FAQAccordion items={faqItems} />
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/faq"
+              className="inline-flex items-center rounded-lg border border-border bg-card px-6 py-3 text-sm font-semibold text-white hover:bg-muted transition-all duration-300 hover:border-brand/30"
+            >
+              View all FAQs <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>

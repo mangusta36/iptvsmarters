@@ -3,11 +3,11 @@ import { absoluteUrl } from "@/lib/site-config"
 import ContactForm from "./contact-form"
 
 export const metadata: Metadata = {
-  title: "Contact - 24/7 Support",
-  description: "Contact doubleclick iptv via WhatsApp. 24/7 technical support, iptv setup assistance, troubleshooting and responsive customer service for your iptv subscription.",
+  title: "Contact IPTV Support - 24/7 Customer Service",
+  description: "Contact doubleclick iptv support via WhatsApp. 24/7 technical assistance, IPTV setup help, troubleshooting, billing support and responsive customer service for your premium IPTV subscription.",
   openGraph: {
-    title: "Contact - 24/7 Support",
-    description: "Need help? Contact our iptv support team via WhatsApp. Response within 30 minutes.",
+    title: "Contact - IPTV Support 24/7",
+    description: "Need help with your IPTV subscription? Contact our support team via WhatsApp. Response within 30 minutes.",
     url: absoluteUrl("/contact"),
   },
   alternates: { canonical: absoluteUrl("/contact") },
