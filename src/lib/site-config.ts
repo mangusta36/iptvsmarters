@@ -1,0 +1,50 @@
+export const siteConfig = {
+  name: "doubleclick iptv",
+  shortName: "doubleclick iptv",
+  description:
+    "Premium IPTV subscription with 25,000+ live channels, 100,000+ VOD movies & series in HD & 4K. Fast setup and 24/7 support.",
+  tagline: "Your premium IPTV streaming experience",
+  url: "https://doubleclicktv.vip",
+  domain: "doubleclicktv.vip",
+  whatsappNumber: "+447828714977",
+  email: "",
+  address: "London, United Kingdom",
+  social: {
+    facebook: "https://facebook.com/doubleclicktv",
+    twitter: "https://twitter.com/doubleclicktv",
+    instagram: "https://instagram.com/doubleclicktv",
+  },
+  features: {
+    channels: "25,000+",
+    vod: "100,000+",
+    support: "24/7",
+  },
+  logo: "/logo.png",
+  ogImage: "/og-image.jpg",
+  trialText: "Get Trial",
+  trialLink: `https://wa.me/447828714977?text=Hi%20doubleclick%20iptv%2C%20I%27d%20like%20to%20request%20a%20trial%20please`,
+  keywords: [
+    "doubleclick iptv",
+    "iptv subscription",
+    "premium iptv",
+    "iptv streaming",
+    "iptv service",
+    "best iptv provider",
+    "iptv channels",
+    "iptv movies",
+    "iptv series",
+    "vod streaming",
+    "iptv guide",
+    "iptv setup",
+    "iptv installation",
+    "iptv app",
+    "smart tv iptv",
+    "android iptv",
+    "fire tv iptv",
+    "iptv support",
+  ],
+};
+
+export function absoluteUrl(path: string): string {
+  return `${siteConfig.url}${path}`;
+}
