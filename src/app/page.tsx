@@ -128,7 +128,7 @@ export default function HomePage() {
       <SchemaMarkup jsonLd={breadcrumbSchema} />
       <SchemaMarkup jsonLd={faqSchema} />
       <HeroSection
-        title="Premium IPTV with 25,000+ Channels in HD & 4K"
+        title="doubleclick iptv : 25,000+ Channels in HD & 4K"
         subtitle="doubleclick iptv : premium IPTV subscription with unlimited VOD, live sports and 24/7 support. Easy setup on all your devices."
         badge="24/7 Customer Support"
         image
@@ -141,7 +141,7 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               <Radio className="h-3 w-3 mr-1" /> What is IPTV?
             </span>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">How IPTV Works</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">How doubleclick iptv Works</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               IPTV (Internet Protocol Television) delivers television content over your internet connection rather than through traditional satellite, cable or terrestrial formats. Instead of broadcasting multiple channels simultaneously and letting you tune in, IPTV sends only the channel you choose directly to your device. doubleclick iptv makes this simple and accessible with easy setup on any device.
             </p>
@@ -172,7 +172,7 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               No commitment &bull; Cancel anytime
             </span>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Choose Your Plan</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Choose Your doubleclick iptv Plan</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               Select the perfect plan for your needs. All plans include 25,000+ channels, 100,000+ VOD, and 24/7 support.
             </p>
@@ -189,7 +189,7 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               Everything you need
             </span>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Premium Features</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">doubleclick iptv Premium Features</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               Everything you need for an exceptional IPTV experience. From live sports to on-demand movies, from catch-up TV to multi-screen viewing.
             </p>
@@ -215,7 +215,7 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               <Trophy className="h-3 w-3 mr-1" /> Channel Categories
             </span>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">What You Can Watch</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">doubleclick iptv Channel Categories</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               doubleclick iptv gives you 25,000+ channels covering every genre imaginable. Here is a glimpse of what is included in every doubleclick iptv subscription.
             </p>
@@ -250,7 +250,7 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               <Star className="h-3 w-3 mr-1" /> Why IPTV?
             </span>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">IPTV vs Traditional TV</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">doubleclick iptv vs Cable &amp; Satellite TV</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               See how a doubleclick iptv subscription compares to traditional cable and satellite television. The differences are clear.
             </p>
@@ -328,7 +328,7 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               Works on all devices
             </span>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Compatible Devices</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">doubleclick iptv Device Compatibility</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               Watch on your TV, phone, tablet or computer. One subscription covers every device in your household. Setup takes less than 5 minutes.
             </p>
@@ -355,7 +355,7 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               <Zap className="h-3 w-3 mr-1" /> Quick start
             </span>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">How to Get Started in 3 Steps</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Get Started With doubleclick iptv</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Getting started with doubleclick iptv is simple. Follow these three steps and you will be watching in minutes.
             </p>
@@ -469,7 +469,7 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               <Shield className="h-3 w-3 mr-1" /> Trust & Reliability
             </span>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Why Thousands Choose Us</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Why Choose doubleclick iptv</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               We take your entertainment seriously. Here is what makes doubleclick iptv a trusted choice for viewers worldwide.
             </p>
@@ -497,7 +497,7 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               Got questions?
             </span>
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Frequently Asked Questions About doubleclick iptv</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Everything you need to know about IPTV and our service.
             </p>
