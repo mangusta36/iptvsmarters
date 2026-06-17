@@ -11,36 +11,36 @@ import { siteConfig, absoluteUrl } from "@/lib/site-config"
 
 export const metadata: Metadata = {
   title: "IPTV Subscription - Premium Plans & Prices 2026",
-  description: "IPTV subscription plans from £37/3mo: 25,000+ live channels, 100,000+ VOD movies & series in HD & 4K. Multi-device support, anti-buffer technology, 24/7 support. Start streaming today.",
+  description: "doubleclick iptv subscription plans from £37/3mo: 25,000+ live channels, 100,000+ VOD movies & series in HD & 4K. Multi-device support, anti-buffer technology, 24/7 support. Start streaming today.",
   openGraph: {
-    title: "Premium IPTV Subscription Plans",
-    description: "Choose your IPTV subscription plan: 25,000+ channels, 100,000+ VOD, HD & 4K, multi-device. From £37/3mo.",
+    title: "doubleclick iptv Subscription Plans",
+    description: "Choose your doubleclick iptv subscription plan: 25,000+ channels, 100,000+ VOD, HD & 4K, multi-device. From £37/3mo for premium IPTV.",
     url: absoluteUrl("/abonnement"),
   },
   alternates: { canonical: absoluteUrl("/abonnement") },
 }
 
 const guarantees = [
-  { icon: Shield, title: "Satisfied or Refunded", desc: "7-day guarantee to test our IPTV service risk-free. If you are not satisfied, we will refund your payment." },
-  { icon: Clock, title: "Fast Activation", desc: "Service activated within 24 hours after payment confirmation. Most activations happen within 2 hours." },
-  { icon: Headphones, title: "24/7 Support", desc: "Technical assistance available 7 days a week via WhatsApp. Average response time under 30 minutes." },
-  { icon: RefreshCw, title: "No Commitment", desc: "Cancel anytime, no fees or penalties. No long-term contracts. You are in control." },
-  { icon: CreditCard, title: "Secure Payment", desc: "PayPal, bank transfer and cryptocurrencies accepted. Your payment information is always protected." },
-  { icon: CheckCircle, title: "Guaranteed Quality", desc: "HD, Full HD and 4K with anti-buffer technology and 99.9% server uptime for uninterrupted streaming." },
-  { icon: Globe, title: "Works Worldwide", desc: "Use your subscription anywhere in the world. Perfect for travellers, expats and international families." },
-  { icon: Smartphone, title: "All Devices", desc: "Compatible with Smart TV, Fire TV Stick, Android, iOS, Windows, Mac. One subscription covers everything." },
-  { icon: Star, title: "Premium Content", desc: "25,000+ live channels, 100,000+ VOD movies & series. Sports, news, entertainment, kids and more." },
+  { icon: Shield, title: "Satisfied or Refunded", desc: "7-day guarantee to test your doubleclick iptv service risk-free. If you are not satisfied, we will refund your payment." },
+  { icon: Clock, title: "Fast Activation", desc: "doubleclick iptv subscription activated within 24 hours after payment confirmation. Most activations happen within 2 hours." },
+  { icon: Headphones, title: "24/7 Support", desc: "doubleclick iptv support available 7 days a week via WhatsApp. Average response time under 30 minutes." },
+  { icon: RefreshCw, title: "No Commitment", desc: "Cancel your doubleclick iptv plan anytime, no fees or penalties. No long-term contracts. You are in control." },
+  { icon: CreditCard, title: "Secure Payment", desc: "PayPal, bank transfer and cryptocurrencies accepted for your doubleclick iptv subscription. Your information is always protected." },
+  { icon: CheckCircle, title: "Guaranteed Quality", desc: "HD, Full HD and 4K with anti-buffer technology and 99.9% server uptime for uninterrupted doubleclick iptv streaming." },
+  { icon: Globe, title: "Works Worldwide", desc: "Use your doubleclick iptv subscription anywhere in the world. Perfect for travellers, expats and international families." },
+  { icon: Smartphone, title: "All Devices", desc: "Compatible with Smart TV, Fire TV Stick, Android, iOS, Windows, Mac. One doubleclick iptv subscription covers everything." },
+  { icon: Star, title: "Premium Content", desc: "25,000+ live channels, 100,000+ VOD movies & series with your doubleclick iptv subscription. Sports, news, entertainment and more." },
 ]
 
 const faqItems = [
-  { question: "How does payment work?", answer: "Payment is made via WhatsApp. We accept PayPal, bank transfer and cryptocurrencies. Once payment is confirmed, you receive your credentials within 24 hours." },
-  { question: "How do I subscribe to a plan?", answer: "Contact us via WhatsApp to choose your offer and receive your login credentials for your IPTV subscription." },
-  { question: "Can I change my plan mid-subscription?", answer: "Yes, you can upgrade to a higher plan at any time. The difference will be calculated pro rata. Downgrades take effect at next renewal." },
-  { question: "Is there a minimum commitment period?", answer: "No, no commitment. You can cancel at any time. Quarterly and annual plans offer better value with significant discounts." },
-  { question: "What if I have installation problems?", answer: "Our technical support team is available 24/7 to help you via WhatsApp. Installation is guided and only takes a few minutes." },
-  { question: "Can I use my subscription on multiple devices?", answer: "Yes, depending on your plan: 1, 2 or 3 simultaneous connections on different devices. Each person watches their own channel." },
-  { question: "What channels are included?", answer: "25,000+ live channels across all categories: sports (Premier League, NFL, UFC, F1), movies, 24/7 news, kids, documentaries, music, international channels in 40+ languages." },
-  { question: "Is 4K streaming available?", answer: "Yes, 4K Ultra HD streaming is available for supported channels and VOD content. Requires 25+ Mbps internet connection and a compatible device." },
+  { question: "How does payment work for doubleclick iptv?", answer: "Payment is made via WhatsApp for your doubleclick iptv subscription. We accept PayPal, bank transfer and cryptocurrencies. Once payment is confirmed, you receive your credentials within 24 hours." },
+  { question: "How do I subscribe to a doubleclick iptv plan?", answer: "Contact us via WhatsApp to choose your offer and receive your login credentials for your doubleclick iptv subscription." },
+  { question: "Can I change my plan mid-subscription?", answer: "Yes, you can upgrade to a higher doubleclick iptv plan at any time. The difference will be calculated pro rata. Downgrades take effect at next renewal." },
+  { question: "Is there a minimum commitment period?", answer: "No, no commitment. You can cancel your doubleclick iptv plan at any time. Quarterly and annual plans offer better value with significant discounts." },
+  { question: "What if I have installation problems?", answer: "Our doubleclick iptv technical support team is available 24/7 to help you via WhatsApp. Installation is guided and only takes a few minutes." },
+  { question: "Can I use my doubleclick iptv subscription on multiple devices?", answer: "Yes, depending on your plan: 1, 2 or 3 simultaneous connections on different devices. Each person watches their own channel with their doubleclick iptv subscription." },
+  { question: "What channels are included with doubleclick iptv?", answer: "25,000+ live channels across all categories: sports (Premier League, NFL, UFC, F1), movies, 24/7 news, kids, documentaries, music, international channels in 40+ languages — included with every doubleclick iptv plan." },
+  { question: "Is 4K streaming available on doubleclick iptv?", answer: "Yes, 4K Ultra HD streaming is available on doubleclick iptv for supported channels and VOD content. Requires 25+ Mbps internet connection and a compatible device." },
 ]
 
 const breadcrumbSchema = {
@@ -73,9 +73,9 @@ export default function AbonnementPage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               Flexible plans no commitment
             </span>
-            <h1 className="text-4xl font-bold text-white sm:text-5xl">IPTV Subscription Plans</h1>
+            <h1 className="text-4xl font-bold text-white sm:text-5xl">doubleclick iptv Plans</h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Choose the plan that suits your needs. All our IPTV subscriptions include 25,000+ TV channels,
+              Choose the doubleclick iptv subscription that suits your needs. All our plans include 25,000+ TV channels,
               100,000+ movies & series on demand, HD & 4K streaming, 24/7 support and a satisfied or refunded guarantee.
             </p>
           </div>
@@ -110,7 +110,7 @@ export default function AbonnementPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-white">What is included in every plan</h2>
-            <p className="mt-2 text-muted-foreground">Every IPTV subscription includes the following features regardless of which plan you choose.</p>
+            <p className="mt-2 text-muted-foreground">Every doubleclick iptv subscription includes the following features regardless of which plan you choose.</p>
           </div>
           <div className="mt-10 max-w-4xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[

@@ -8,59 +8,59 @@ import { siteConfig, absoluteUrl } from "@/lib/site-config"
 
 export const metadata: Metadata = {
   title: "IPTV Support - Help & Assistance 24/7",
-  description: "IPTV support and help centre. Setup guides, troubleshooting tips, connection fixes, video quality optimisation and 24/7 WhatsApp assistance for your IPTV subscription. Response within 30 minutes.",
+  description: "doubleclick iptv support and help centre. Setup guides, troubleshooting tips, connection fixes, video quality optimisation and 24/7 WhatsApp assistance for your doubleclick iptv subscription. Response within 30 minutes.",
   openGraph: {
-    title: "IPTV Support - 24/7 Assistance",
-    description: "Need help with your IPTV? Setup, troubleshooting, billing and technical support available 24/7 via WhatsApp.",
+    title: "doubleclick iptv Support - 24/7 Assistance",
+    description: "Need help with your doubleclick iptv subscription? Setup, troubleshooting, billing and technical support available 24/7 via WhatsApp.",
     url: absoluteUrl("/support"),
   },
   alternates: { canonical: absoluteUrl("/support") },
 }
 
 const quickHelp = [
-  { icon: Settings, title: "Installation", desc: "Step-by-step IPTV installation guide for all your devices.", href: "/iptv-installation" },
-  { icon: Wifi, title: "Connection Issues", desc: "Fix buffering, freezing and connection problems.", href: "/iptv-guide" },
-  { icon: Video, title: "Video Quality", desc: "Optimise HD, Full HD and 4K quality settings.", href: "/iptv-4k" },
-  { icon: RefreshCw, title: "Reset Password", desc: "Reset your password or recover your account.", href: "/faq" },
-  { icon: Download, title: "Download Apps", desc: "Download the IPTV app on all your devices.", href: "/iptv-installation" },
-  { icon: CreditCard, title: "Payment & Billing", desc: "Payments, renewals and subscription management.", href: "/abonnement" },
-  { icon: Smartphone, title: "Multi-Screen Setup", desc: "Watch on multiple devices simultaneously.", href: "/abonnement" },
-  { icon: Globe, title: "Watch Abroad", desc: "Use your IPTV subscription anywhere in the world.", href: "/iptv-guide" },
-  { icon: Tv, title: "Smart TV Setup", desc: "Install IPTV on Samsung, LG, Sony Smart TVs.", href: "/iptv-smart-tv" },
-  { icon: Monitor, title: "EPG Guide", desc: "Set up and use the Electronic Program Guide.", href: "/iptv-guide" },
-  { icon: Shield, title: "VPN Setup", desc: "Configure a VPN for private streaming.", href: "/blog/iptv-vpn-guide" },
-  { icon: BookOpen, title: "M3U & Xtream Codes", desc: "Configure connection protocols for your devices.", href: "/blog/xtream-codes-api-guide" },
+  { icon: Settings, title: "Installation", desc: "Step-by-step doubleclick iptv installation guide for all your devices.", href: "/iptv-installation" },
+  { icon: Wifi, title: "Connection Issues", desc: "Fix buffering, freezing and connection problems on doubleclick iptv.", href: "/iptv-guide" },
+  { icon: Video, title: "Video Quality", desc: "Optimise HD, Full HD and 4K quality on your doubleclick iptv subscription.", href: "/iptv-4k" },
+  { icon: RefreshCw, title: "Reset Password", desc: "Reset your doubleclick iptv password or recover your account.", href: "/faq" },
+  { icon: Download, title: "Download Apps", desc: "Download the IPTV app for doubleclick iptv on all your devices.", href: "/iptv-installation" },
+  { icon: CreditCard, title: "Payment & Billing", desc: "Payments, renewals and doubleclick iptv subscription management.", href: "/abonnement" },
+  { icon: Smartphone, title: "Multi-Screen Setup", desc: "Watch doubleclick iptv on multiple devices simultaneously.", href: "/abonnement" },
+  { icon: Globe, title: "Watch Abroad", desc: "Use your doubleclick iptv subscription anywhere in the world.", href: "/iptv-guide" },
+  { icon: Tv, title: "Smart TV Setup", desc: "Install doubleclick iptv on Samsung, LG, Sony Smart TVs.", href: "/iptv-smart-tv" },
+  { icon: Monitor, title: "EPG Guide", desc: "Set up and use the Electronic Program Guide for doubleclick iptv.", href: "/iptv-guide" },
+  { icon: Shield, title: "VPN Setup", desc: "Configure a VPN for private doubleclick iptv streaming.", href: "/blog/iptv-vpn-guide" },
+  { icon: BookOpen, title: "M3U & Xtream Codes", desc: "Configure connection protocols for doubleclick iptv on your devices.", href: "/blog/xtream-codes-api-guide" },
 ]
 
 const troubleshootingSteps = [
   {
     title: "Channels not loading",
-    steps: ["Check your internet connection is active and stable", "Restart the IPTV app and your device", "Verify your subscription is active and not expired", "Try switching from WiFi to Ethernet", "Contact support if the issue persists"],
+    steps: ["Check your internet connection is active and stable", "Restart the IPTV app and your device", "Verify your doubleclick iptv subscription is active and not expired", "Try switching from WiFi to Ethernet", "Contact doubleclick iptv support if the issue persists"],
     icon: Wifi,
   },
   {
     title: "Buffering or freezing",
-    steps: ["Run a speed test (need 10+ Mbps for HD, 25+ for 4K)", "Close bandwidth-heavy background apps", "Use a wired Ethernet connection instead of WiFi", "Reduce video quality in app settings", "Try using a VPN to prevent ISP throttling"],
+    steps: ["Run a speed test (need 10+ Mbps for HD, 25+ for 4K on doubleclick iptv)", "Close bandwidth-heavy background apps", "Use a wired Ethernet connection instead of WiFi", "Reduce video quality in app settings", "Try using a VPN to prevent ISP throttling on doubleclick iptv"],
     icon: Zap,
   },
   {
     title: "Login issues",
-    steps: ["Double-check username and password for typos", "Ensure Caps Lock is off", "Copy and paste credentials if possible", "Contact us via WhatsApp for a password reset", "Check your subscription has not expired"],
+    steps: ["Double-check your doubleclick iptv username and password for typos", "Ensure Caps Lock is off", "Copy and paste your doubleclick iptv credentials if possible", "Contact us via WhatsApp for a doubleclick iptv password reset", "Check your doubleclick iptv subscription has not expired"],
     icon: Shield,
   },
 ]
 
 const faqItems = [
-  { question: "How do I reset my password?", answer: "Contact us via WhatsApp with your user ID. We will send you a new password within 30 minutes." },
-  { question: "My subscription has expired, how do I renew?", answer: "Contact us via WhatsApp to renew. Your IPTV subscription will be reactivated immediately after payment confirmation." },
-  { question: "Can I transfer my subscription to a new device?", answer: "Yes, just install the app on your new device and log in with your current credentials. Your subscription is linked to your account, not your device." },
-  { question: "What if a channel is not working?", answer: "First check your internet connection. If the issue persists, contact our support with the channel name and we will investigate." },
-  { question: "How do I subscribe to a plan?", answer: "Contact us via WhatsApp to choose your offer and receive your login credentials for our premium IPTV service." },
-  { question: "How can I improve my video quality?", answer: "Ensure you have a stable connection of at least 25 Mbps for 4K. Use an Ethernet connection, close background apps, and check your device display settings." },
-  { question: "Does my subscription work abroad?", answer: "Yes, your doubleclick iptv subscription works worldwide. A stable internet connection is all you need, regardless of your location." },
-  { question: "Can I watch on multiple screens at the same time?", answer: "Yes, depending on your plan (1, 2 or 3 screens). Each family member can watch a different channel on their own device." },
-  { question: "What devices are compatible?", answer: "Samsung Smart TV (Tizen), LG (webOS), Sony Bravia (Android TV), Fire TV Stick, Android TV boxes, iPhone/iPad, Android phones/tablets, Windows PC and Mac." },
-  { question: "How do I use Xtream Codes or M3U?", answer: "When setting up the app, select Xtream Codes API and enter your portal URL, username and password. For M3U, paste the playlist URL provided by your subscription." },
+  { question: "How do I reset my doubleclick iptv password?", answer: "Contact us via WhatsApp with your user ID. We will send you a new password within 30 minutes for your doubleclick iptv account." },
+  { question: "My subscription has expired, how do I renew?", answer: "Contact us via WhatsApp to renew. Your doubleclick iptv subscription will be reactivated immediately after payment confirmation." },
+  { question: "Can I transfer my doubleclick iptv subscription to a new device?", answer: "Yes, just install the app on your new device and log in with your current doubleclick iptv credentials. Your subscription is linked to your account, not your device." },
+  { question: "What if a channel is not working on doubleclick iptv?", answer: "First check your internet connection. If the issue persists, contact doubleclick iptv support with the channel name and we will investigate." },
+  { question: "How do I subscribe to a doubleclick iptv plan?", answer: "Contact us via WhatsApp to choose your offer and receive your login credentials for your doubleclick iptv subscription." },
+  { question: "How can I improve my video quality on doubleclick iptv?", answer: "Ensure you have a stable connection of at least 25 Mbps for 4K on doubleclick iptv. Use an Ethernet connection, close background apps, and check your device display settings." },
+  { question: "Does my doubleclick iptv subscription work abroad?", answer: "Yes, your doubleclick iptv subscription works worldwide. A stable internet connection is all you need, regardless of your location." },
+  { question: "Can I watch doubleclick iptv on multiple screens at the same time?", answer: "Yes, depending on your plan (1, 2 or 3 screens). Each family member can watch a different channel on their own device with their doubleclick iptv subscription." },
+  { question: "What devices are compatible with doubleclick iptv?", answer: "Samsung Smart TV (Tizen), LG (webOS), Sony Bravia (Android TV), Fire TV Stick, Android TV boxes, iPhone/iPad, Android phones/tablets, Windows PC and Mac — all compatible with doubleclick iptv." },
+  { question: "How do I use Xtream Codes or M3U with doubleclick iptv?", answer: "When setting up the app, select Xtream Codes API and enter your portal URL, username and password. For M3U, paste the playlist URL provided by your doubleclick iptv subscription." },
 ]
 
 const faqSchema = {
@@ -93,12 +93,12 @@ export default function SupportPage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               <HelpCircle className="h-3 w-3 mr-1" /> 24/7 Assistance
             </span>
-            <h1 className="text-4xl font-bold text-white sm:text-5xl">IPTV Support Centre</h1>
+            <h1 className="text-4xl font-bold text-white sm:text-5xl">doubleclick iptv Help & Support</h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Our support team is available 24/7 to help you with installation, troubleshooting and any questions about your IPTV service.
+              Our support team is available 24/7 to help you with doubleclick iptv installation, troubleshooting and any questions about your service.
             </p>
             <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              Whether you need help with IPTV installation, setup, or are experiencing a technical issue,
+              Whether you need help with doubleclick iptv setup, or are experiencing a technical issue,
               we are here for you. Our expert team responds via WhatsApp within 30 minutes on average.
             </p>
           </div>
@@ -118,7 +118,7 @@ export default function SupportPage() {
       <section className="py-20 bg-muted/50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white text-center">Common Issues & Solutions</h2>
-          <p className="mt-2 text-muted-foreground text-center max-w-2xl mx-auto">Follow these step-by-step guides to resolve the most common IPTV issues before contacting support.</p>
+          <p className="mt-2 text-muted-foreground text-center max-w-2xl mx-auto">Follow these step-by-step guides to resolve the most common doubleclick iptv issues before contacting support.</p>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {troubleshootingSteps.map((section) => {
               const Icon = section.icon
@@ -164,7 +164,7 @@ export default function SupportPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <div className="rounded-2xl border border-border bg-card p-8 max-w-xl mx-auto">
             <MessageCircle className="mx-auto h-10 w-10 text-brand" />
-            <h2 className="mt-4 text-2xl font-bold text-white">Priority WhatsApp Support</h2>
+            <h2 className="mt-4 text-2xl font-bold text-white">Priority doubleclick iptv Support</h2>
             <p className="mt-1 text-lg text-white font-semibold">+44 7828 714977</p>
             <p className="mt-1 text-muted-foreground">Guaranteed response within 30 minutes, 7 days a week</p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">

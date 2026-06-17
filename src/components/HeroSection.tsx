@@ -21,7 +21,7 @@ export default function HeroSection({
         <>
           <Image
             src="https://images.pexels.com/photos/35490296/pexels-photo-35490296.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Modern living room with large TV displaying streaming content - doubleclick iptv premium IPTV service"
+            alt="Modern living room with large TV displaying doubleclick iptv premium IPTV streaming service"
             fill
             sizes="100vw"
             className="object-cover scale-105"

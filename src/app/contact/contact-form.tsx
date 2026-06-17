@@ -17,19 +17,19 @@ const breadcrumbSchema = {
 }
 
 const faqItems = [
-  { question: "How can I contact you?", answer: "All support is via WhatsApp at +44 7828 714977. It is the fastest way to get a response within 30 minutes. We do not currently offer phone or email support." },
-  { question: "What are your opening hours?", answer: "Our support team is available 24/7, 365 days a year. Send us a WhatsApp message anytime and we will respond promptly." },
-  { question: "How do I get a subscription?", answer: "Contact us directly via WhatsApp at +44 7828 714977 to choose your plan and receive your credentials. We will guide you through the process." },
-  { question: "What is the activation time?", answer: "Your subscription is activated within 24 hours maximum after payment confirmation via WhatsApp. Most activations happen within 2 hours." },
-  { question: "Can you help with installation?", answer: "Yes, our support team will guide you step by step through the installation process on any device. Setup takes less than 5 minutes." },
-  { question: "What payment methods do you accept?", answer: "We accept PayPal, bank transfer and cryptocurrencies. All transactions are secure and your information is confidential." },
+  { question: "How can I contact doubleclick iptv?", answer: "All doubleclick iptv support is via WhatsApp at +44 7828 714977. It is the fastest way to get a response within 30 minutes." },
+  { question: "What are your opening hours?", answer: "The doubleclick iptv support team is available 24/7, 365 days a year. Send us a WhatsApp message anytime and we will respond promptly." },
+  { question: "How do I get a doubleclick iptv subscription?", answer: "Contact us directly via WhatsApp at +44 7828 714977 to choose your plan and receive your credentials. We will guide you through the process." },
+  { question: "What is the activation time for doubleclick iptv?", answer: "Your doubleclick iptv subscription is activated within 24 hours maximum after payment confirmation via WhatsApp. Most activations happen within 2 hours." },
+  { question: "Can you help with doubleclick iptv installation?", answer: "Yes, our support team will guide you step by step through the doubleclick iptv installation process on any device. Setup takes less than 5 minutes." },
+  { question: "What payment methods does doubleclick iptv accept?", answer: "We accept PayPal, bank transfer and cryptocurrencies for your doubleclick iptv subscription. All transactions are secure and your information is confidential." },
 ]
 
 const supportReasons = [
-  { icon: Zap, title: "New Subscription", desc: "Choose a plan, make payment, receive credentials", color: "text-brand" },
-  { icon: Smartphone, title: "Installation Help", desc: "Step-by-step setup on Smart TV, Fire Stick, phone or PC", color: "text-blue-400" },
-  { icon: Globe, title: "Technical Issue", desc: "Buffering, connection problems, channels not loading", color: "text-rose-400" },
-  { icon: Shield, title: "Account Support", desc: "Password reset, renewal, plan upgrade or cancellation", color: "text-emerald-400" },
+  { icon: Zap, title: "New Subscription", desc: "Choose a doubleclick iptv plan, make payment, receive credentials", color: "text-brand" },
+  { icon: Smartphone, title: "Installation Help", desc: "Step-by-step doubleclick iptv setup on Smart TV, Fire Stick, phone or PC", color: "text-blue-400" },
+  { icon: Globe, title: "Technical Issue", desc: "Buffering, connection problems, channels not loading on doubleclick iptv", color: "text-rose-400" },
+  { icon: Shield, title: "Account Support", desc: "doubleclick iptv password reset, renewal, plan upgrade or cancellation", color: "text-emerald-400" },
 ]
 
 export default function ContactForm() {
@@ -48,7 +48,7 @@ export default function ContactForm() {
               on WhatsApp. It is the fastest way to reach us.
             </p>
             <p className="mt-2 text-muted-foreground max-w-xl mx-auto">
-              Whether you need a new subscription, installation help, or have a technical problem, our expert support team is ready to assist you within minutes.
+              Whether you need a new doubleclick iptv subscription, installation help, or have a technical problem, our expert support team is ready to assist you within minutes.
             </p>
           </div>
 
