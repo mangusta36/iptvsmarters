@@ -18,45 +18,46 @@ export default function HeroSection({
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {showBg && (
-        <div className="absolute inset-0">
+        <>
           <Image
-            src="https://images.pexels.com/photos/8583821/pexels-photo-8583821.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Luxury home theater with leather recliners and large screen for doubleclick iptv premium IPTV streaming"
+            src="https://images.pexels.com/photos/3555614/pexels-photo-3555614.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt="Modern living room with large TV displaying doubleclick iptv premium IPTV streaming service"
             fill
             sizes="100vw"
-            className="object-cover scale-105 z-0"
+            className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/60 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10" />
-        </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand/5 via-transparent to-transparent" />
+        </>
       )}
-      <div className="absolute inset-0 bg-gradient-to-b from-brand/[0.08] via-transparent to-transparent" />
-      <div className="absolute inset-0 opacity-[0.06]">
-        <div className="absolute top-1/3 left-1/3 w-[500px] h-[500px] bg-brand rounded-full blur-[150px]" />
-        <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] bg-accent rounded-full blur-[120px]" />
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-brand/10 rounded-full blur-[150px]" />
+        <div className="absolute -bottom-40 -right-40 w-[400px] h-[400px] bg-accent/10 rounded-full blur-[120px]" />
       </div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative w-full">
-        <div className="max-w-3xl">
+        <div className="max-w-2xl py-32 sm:py-40 lg:py-48">
           {badge && (
-            <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-6 backdrop-blur-sm">
+            <span className="inline-flex items-center rounded-full bg-brand/15 border border-brand/25 px-4 py-1.5 text-xs font-semibold text-brand tracking-wider uppercase mb-8 backdrop-blur-sm">
               {badge}
             </span>
           )}
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl leading-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-white leading-[1.05]">
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-6 text-lg text-muted-foreground sm:text-xl max-w-2xl leading-relaxed">
+            <p className="mt-6 text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-xl leading-relaxed font-light">
               {subtitle}
             </p>
           )}
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <div className="mt-12 flex flex-col sm:flex-row gap-4">
             <a
               href={siteConfig.trialLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-8 py-4 text-base font-bold text-black hover:bg-brand-hover transition-all duration-300 shadow-lg shadow-brand/30 hover:shadow-xl hover:shadow-brand/40 hover:scale-105"
+              className="inline-flex items-center justify-center gap-3 rounded-xl bg-brand px-8 py-4 text-base font-bold text-black hover:bg-brand-hover transition-all duration-300 shadow-xl shadow-brand/30 hover:shadow-2xl hover:shadow-brand/40 hover:-translate-y-1"
             >
               <MessageCircle className="h-5 w-5" />
               {siteConfig.trialText}
@@ -65,24 +66,24 @@ export default function HeroSection({
               href={`https://wa.me/${siteConfig.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-card/60 backdrop-blur-sm px-8 py-4 text-base font-semibold text-white hover:bg-card/80 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-3 rounded-xl border border-white/20 bg-white/5 backdrop-blur-md px-8 py-4 text-base font-semibold text-white hover:bg-white/10 transition-all duration-300 hover:-translate-y-1"
             >
               <Tv className="h-5 w-5" />
               View Plans
             </a>
           </div>
-          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
-            <span className="flex items-center gap-2">
+          <div className="mt-14 flex flex-wrap items-center gap-x-12 gap-y-4">
+            <span className="flex items-center gap-2.5 text-sm text-gray-400">
               <Shield className="h-4 w-4 text-brand" />
-              25,000+ Channels
+              <span>25,000+ Channels</span>
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2.5 text-sm text-gray-400">
               <Zap className="h-4 w-4 text-accent" />
-              HD & 4K Quality
+              <span>HD & 4K Quality</span>
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2.5 text-sm text-gray-400">
               <MessageCircle className="h-4 w-4 text-success" />
-              24/7 Support
+              <span>24/7 Support</span>
             </span>
           </div>
         </div>
