@@ -25,7 +25,7 @@ const blogSchema = {
   url: absoluteUrl("/blog"),
 }
 
-const POSTS_PER_PAGE = 9
+const POSTS_PER_PAGE = 50
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState("All")

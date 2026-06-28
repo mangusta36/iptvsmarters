@@ -20,7 +20,7 @@ export const siteConfig = {
     support: "24/7",
   },
   logo: "/logo.png",
-  ogImage: "/og-image.jpg",
+  ogImage: "/og-image.svg",
   trialText: "Get Trial",
   trialLink: `https://wa.me/447828714977?text=Hi%20doubleclick%20iptv%2C%20I%27d%20like%20to%20request%20a%20trial%20please`,
   keywords: [
@@ -47,7 +47,7 @@ export const siteConfig = {
     "iptv sports",
     "iptv catch up tv",
     "iptv multi screen",
-    "iptv xream codes",
+    "iptv xtream codes",
     "iptv m3u playlist",
     "iptv epg",
     "iptv 4k ultra hd",

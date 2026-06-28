@@ -32,6 +32,12 @@ export async function generateMetadata({
       url: absoluteUrl(`/blog/${slug}`),
       images: [{ url: post.image, width: 800, height: 450, alt: post.title }],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [post.image],
+    },
     alternates: { canonical: absoluteUrl(`/blog/${slug}`) },
   }
 }
@@ -55,7 +61,7 @@ export default async function BlogPostPage({
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
     image: post.image,

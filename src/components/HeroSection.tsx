@@ -18,18 +18,18 @@ export default function HeroSection({
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {showBg && (
-        <>
+        <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/35490296/pexels-photo-35490296.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Modern living room with large TV displaying doubleclick iptv premium IPTV streaming service"
+            src="https://images.pexels.com/photos/8583821/pexels-photo-8583821.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt="Luxury home theater with leather recliners and large screen for doubleclick iptv premium IPTV streaming"
             fill
             sizes="100vw"
-            className="object-cover scale-105"
+            className="object-cover scale-105 z-0"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/80 to-black/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-        </>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/60 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10" />
+        </div>
       )}
       <div className="absolute inset-0 bg-gradient-to-b from-brand/[0.08] via-transparent to-transparent" />
       <div className="absolute inset-0 opacity-[0.06]">

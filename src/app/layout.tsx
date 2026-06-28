@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     images: [
       {
-        url: `${siteConfig.url}/og-image.jpg`,
+        url: `${siteConfig.url}/og-image.svg`,
         width: 1200,
         height: 630,
         alt: siteConfig.name,
@@ -53,10 +53,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@doubleclicktv",
+    creator: "@doubleclicktv",
     title: "doubleclick iptv - Premium IPTV Subscription",
     description:
       "25,000+ live channels, 100,000+ VOD movies & series. Fast installation and 24/7 support.",
-    images: [`${siteConfig.url}/og-image.jpg`],
+    images: [`${siteConfig.url}/og-image.svg`],
   },
   robots: {
     index: true,
@@ -88,7 +90,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: siteConfig.name,
   url: siteConfig.url,
-  logo: `${siteConfig.url}/logo.png`,
+  logo: `${siteConfig.url}/logo.svg`,
   description: siteConfig.description,
   contactPoint: {
     "@type": "ContactPoint",
