@@ -1,12 +1,46 @@
 import Image from "next/image"
 import { MessageCircle, Shield, Zap, Tv } from "lucide-react"
 import { siteConfig } from "@/lib/site-config"
+import type { ReactNode } from "react"
 
 interface HeroSectionProps {
   title: string
   subtitle?: string
   image?: boolean
   badge?: string
+}
+
+const goldTokens = ["HD & 4K", "Ultra HD", "25,000+ Channels"]
+
+function renderTitle(text: string): ReactNode {
+  const parts: ReactNode[] = []
+  let remaining = text
+  let key = 0
+
+  while (remaining.length > 0) {
+    const matches = goldTokens
+      .map((token) => ({ token, index: remaining.indexOf(token) }))
+      .filter((m) => m.index !== -1)
+      .sort((a, b) => a.index - b.index)
+
+    if (matches.length === 0) {
+      parts.push(<span key={key++}>{remaining}</span>)
+      break
+    }
+
+    const { token, index } = matches[0]
+    if (index > 0) {
+      parts.push(<span key={key++}>{remaining.slice(0, index)}</span>)
+    }
+    parts.push(
+      <span key={key++} className="text-gold">
+        {token}
+      </span>
+    )
+    remaining = remaining.slice(index + token.length)
+  }
+
+  return parts
 }
 
 export default function HeroSection({
@@ -20,17 +54,17 @@ export default function HeroSection({
       {showBg && (
         <>
           <Image
-            src="https://images.pexels.com/photos/3555614/pexels-photo-3555614.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Modern living room with large TV displaying doubleclick iptv premium IPTV streaming service"
+            src="https://images.pexels.com/photos/29942709/pexels-photo-29942709.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt="Modern smart TV displaying vibrant streaming apps in a dark ambient living room with neon lighting"
             fill
             sizes="100vw"
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand/5 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand/[0.07] via-transparent to-transparent" />
         </>
       )}
       <div className="absolute inset-0 overflow-hidden">
@@ -38,21 +72,21 @@ export default function HeroSection({
         <div className="absolute -bottom-40 -right-40 w-[400px] h-[400px] bg-accent/10 rounded-full blur-[120px]" />
       </div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative w-full">
-        <div className="max-w-2xl py-32 sm:py-40 lg:py-48">
+        <div className="max-w-xl py-32 sm:py-40 lg:py-48">
           {badge && (
             <span className="inline-flex items-center rounded-full bg-brand/15 border border-brand/25 px-4 py-1.5 text-xs font-semibold text-brand tracking-wider uppercase mb-8 backdrop-blur-sm">
               {badge}
             </span>
           )}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-white leading-[1.05]">
-            {title}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.1] text-shadow-glow">
+            {renderTitle(title)}
           </h1>
           {subtitle && (
-            <p className="mt-6 text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-xl leading-relaxed font-light">
+            <p className="mt-6 text-base sm:text-lg lg:text-xl text-gray-300 max-w-lg leading-relaxed font-light text-shadow-subtle">
               {subtitle}
             </p>
           )}
-          <div className="mt-12 flex flex-col sm:flex-row gap-4">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
               href={siteConfig.trialLink}
               target="_blank"
@@ -72,7 +106,7 @@ export default function HeroSection({
               View Plans
             </a>
           </div>
-          <div className="mt-14 flex flex-wrap items-center gap-x-12 gap-y-4">
+          <div className="mt-12 flex flex-wrap items-center gap-x-12 gap-y-4">
             <span className="flex items-center gap-2.5 text-sm text-gray-400">
               <Shield className="h-4 w-4 text-brand" />
               <span>25,000+ Channels</span>
