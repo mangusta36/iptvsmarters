@@ -30,7 +30,7 @@ const deviceLinks = [
   { label: "Mac", href: "/iptv-mac" },
   { label: "iPhone & iPad", href: "/iptv-iphone" },
   { label: "Sony Bravia", href: "/iptv-sony" },
-  { label: "Fire TV Stick", href: "/iptv-smart-tv" },
+  { label: "Fire TV Stick", href: "/iptv-fire-tv-stick-guide" },
 ]
 
 export default function Footer() {
