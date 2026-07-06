@@ -176,7 +176,7 @@ export const blogPosts: BlogPost[] = [
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/5637685/pexels-photo-5637685.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -409,7 +409,7 @@ export const blogPosts: BlogPost[] = [
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/4042800/pexels-photo-4042800.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -552,7 +552,7 @@ export const blogPosts: BlogPost[] = [
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/4009409/pexels-photo-4009409.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -707,7 +707,7 @@ export const blogPosts: BlogPost[] = [
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/4009407/pexels-photo-4009407.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -891,7 +891,7 @@ export const blogPosts: BlogPost[] = [
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/4009412/pexels-photo-4009412.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -1061,7 +1061,7 @@ export const blogPosts: BlogPost[] = [
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/5637687/pexels-photo-5637687.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -1236,7 +1236,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/5637689/pexels-photo-5637689.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -1457,7 +1457,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -1627,7 +1627,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/8441803/pexels-photo-8441803.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -1844,7 +1844,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/4009408/pexels-photo-4009408.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -2030,7 +2030,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/4009411/pexels-photo-4009411.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -2221,7 +2221,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/4009406/pexels-photo-4009406.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -2372,7 +2372,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/5380665/pexels-photo-5380665.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -2526,7 +2526,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 
 <p>Choosing a legal IPTV provider protects you from the risks associated with unauthorised services while giving you access to the best content. For a complete cost and feature comparison of legal IPTV versus traditional cable and satellite TV, see our <a href="/blog/iptv-vs-cable-satellite">IPTV vs Cable vs Satellite comparison guide</a>.</p>
@@ -2711,7 +2711,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Need Help? Contact us on WhatsApp</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Thousands of channels in HD and 4K. Contact us on WhatsApp for more information.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us</a>
 </div>
 `,
     image: 'https://images.pexels.com/photos/4009410/pexels-photo-4009410.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -2854,7 +2854,7 @@ http://example.com/stream/bbc2.m3u8
 
 <h3>Step 1: Choose Your Subscription</h3>
 
-<p>Visit the <a href="/abonnement">doubleclick iptv subscription page</a> and select a plan that includes Brazilian channels. Most providers offer packages specifically curated for Brazilian content. You can choose between monthly, quarterly or annual plans. Payment is typically accepted via PayPal, cryptocurrency or bank transfer. For <strong>doubleclick iptv</strong>, you can also <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer">contact us on WhatsApp</a> to discuss your specific channel requirements.</p>
+<p>Visit the <a href="/abonnement">doubleclick iptv subscription page</a> and select a plan that includes Brazilian channels. Most providers offer packages specifically curated for Brazilian content. You can choose between monthly, quarterly or annual plans. Payment is typically accepted via PayPal, cryptocurrency or bank transfer. For <strong>doubleclick iptv</strong>, you can also <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer">contact us on WhatsApp</a> to discuss your specific channel requirements.</p>
 
 <h3>Step 2: Receive Your Credentials</h3>
 
@@ -2946,7 +2946,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Ready to Watch Brazilian TV Abroad?</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Get a doubleclick iptv subscription and access all Brazilian channels from anywhere in the world.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us on WhatsApp</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us on WhatsApp</a>
 </div>
 
 <p>For Brazilians living abroad, IPTV is the most complete and cost-effective way to stay connected with home. Access Globo, Record TV, SBT, Band, and all your favourite channels from anywhere in the world. For a broader perspective on watching TV from your home country no matter where you live, read our <a href="/blog/iptv-for-expats">IPTV for Expats & International Viewers guide</a>.</p>`,
@@ -3199,7 +3199,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Ready to Watch Live Sports with IPTV?</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Get a doubleclick iptv subscription and never miss a match again. Premier League, NFL, UFC and more.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us on WhatsApp</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us on WhatsApp</a>
 </div>
 
 <p>If you have questions about setting up IPTV for sports, visit our <a href="/faq">FAQ page</a> or <a href="/support">contact support</a>. For those ready to compare options, our <a href="/blog/iptv-4k-ultra-hd-streaming">guide to IPTV 4K Ultra HD streaming</a> covers the best channels and settings for the highest-quality sports picture. To see how IPTV compares with traditional cable and satellite for sports coverage, read our <a href="/blog/iptv-vs-cable-satellite">IPTV vs Cable vs Satellite comparison</a>.</p>`,
@@ -3392,7 +3392,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Ready to Watch Home Country TV Abroad?</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Get a doubleclick iptv subscription and access 25,000+ channels from around the world. Contact us on WhatsApp for a trial.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us on WhatsApp</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Contact us on WhatsApp</a>
 </div>
 
 <p>Living abroad should not mean losing touch with your home country's television. With IPTV, you can access the same channels you enjoyed back home, plus discover new content from your host country and around the world. For those interested in specific regions, check our <a href="/blog/iptv-brazil-channels">Brazilian channels guide</a> or our <a href="/blog/iptv-sports-channels">sports coverage guide</a>. For technical setup assistance, visit our <a href="/iptv-installation">installation page</a> or <a href="/support">support centre</a>.</p>`,
@@ -3619,7 +3619,7 @@ http://example.com/stream/bbc2.m3u8
 <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin: 32px 0; text-align: center;">
   <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px;">Ready to Save $1,200+ Per Year?</h3>
   <p style="color: #94a3b8; margin-bottom: 16px;">Switch to doubleclick iptv and get 25,000+ channels at a fraction of the cost of cable or satellite. Contact us on WhatsApp to get started.</p>
-  <a href="https://wa.me/447828714977" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Get Started on WhatsApp</a>
+  <a href="https://wa.me/447460006846" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #3b82f6; color: #000; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;">Get Started on WhatsApp</a>
 </div>
 
 <p>Making the switch from cable or satellite to IPTV is straightforward. You keep your existing TV and internet connection, add a streaming device if needed, install an IPTV app, and start watching. No technician visits, no new cables, no contracts to sign. For setup guides, visit our <a href="/iptv-installation">installation page</a> or <a href="/support">support centre</a>. If you are still unsure, our <a href="/blog/iptv-guide">Complete IPTV Guide</a> has all the information you need to make a confident decision.</p>`,
