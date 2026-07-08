@@ -30,9 +30,6 @@ const staticRoutes = [
   { path: "/films", priority: 0.7, changeFrequency: "weekly" as const },
   { path: "/vod", priority: 0.7, changeFrequency: "weekly" as const },
   { path: "/blog", priority: 0.7, changeFrequency: "weekly" as const },
-  { path: "/legal-notice", priority: 0.3, changeFrequency: "yearly" as const },
-  { path: "/terms-conditions", priority: 0.3, changeFrequency: "yearly" as const },
-  { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" as const },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

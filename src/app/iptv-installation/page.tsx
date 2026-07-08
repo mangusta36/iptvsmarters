@@ -9,6 +9,11 @@ import { siteConfig, absoluteUrl } from "@/lib/site-config"
 export const metadata: Metadata = {
   title: "IPTV Installation - Complete Guide",
   description: "Complete IPTV installation guide for Samsung, LG, Sony Smart TVs, Android, iPhone, Windows and Mac. Set up your doubleclick iptv subscription in 5 minutes.",
+  openGraph: {
+    title: "IPTV Installation Guide - doubleclick iptv",
+    description: "Complete step-by-step installation guide for all devices. Set up your IPTV subscription in 5 minutes.",
+    url: absoluteUrl("/iptv-installation"),
+  },
   alternates: { canonical: absoluteUrl("/iptv-installation") },
 }
 
