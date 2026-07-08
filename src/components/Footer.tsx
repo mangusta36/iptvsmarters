@@ -124,7 +124,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-brand transition-colors duration-200"
                 >
-                  WhatsApp : +44 7460 006846
+                  WhatsApp : +212 776203783
                 </a>
               </li>
               <li>

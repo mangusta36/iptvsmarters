@@ -165,7 +165,7 @@ export default function SupportPage() {
           <div className="rounded-2xl border border-border bg-card p-8 max-w-xl mx-auto">
             <MessageCircle className="mx-auto h-10 w-10 text-brand" />
             <h2 className="mt-4 text-2xl font-bold text-white">Priority doubleclick iptv Support</h2>
-            <p className="mt-1 text-lg text-white font-semibold">+44 7460 006846</p>
+            <p className="mt-1 text-lg text-white font-semibold">+212 776203783</p>
             <p className="mt-1 text-muted-foreground">Guaranteed response within 30 minutes, 7 days a week</p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
               <a
