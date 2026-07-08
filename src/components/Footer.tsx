@@ -17,11 +17,12 @@ const footerNavLinks = [
 
 const guideLinks = [
   { label: "Installation Guide", href: "/iptv-installation" },
+  { label: "Activation Guide", href: "/iptv-activation" },
   { label: "Complete IPTV Guide", href: "/iptv-guide" },
+  { label: "Xtream Codes Guide", href: "/iptv-xtream-codes" },
   { label: "IPTV on Samsung", href: "/iptv-samsung" },
   { label: "IPTV on Android", href: "/iptv-android" },
   { label: "IPTV on LG", href: "/iptv-lg" },
-  { label: "IPTV in UK", href: "/iptv-france" },
 ]
 
 const deviceLinks = [
@@ -30,7 +31,14 @@ const deviceLinks = [
   { label: "Mac", href: "/iptv-mac" },
   { label: "iPhone & iPad", href: "/iptv-iphone" },
   { label: "Sony Bravia", href: "/iptv-sony" },
-  { label: "Fire TV Stick", href: "/iptv-fire-tv-stick-guide" },
+  { label: "Fire TV Stick", href: "/blog/iptv-fire-tv-stick-guide" },
+]
+
+const contentLinks = [
+  { label: "Movies", href: "/films" },
+  { label: "Series", href: "/series" },
+  { label: "VOD Catalogue", href: "/vod" },
+  { label: "IPTV in UK", href: "/iptv-france" },
 ]
 
 export default function Footer() {
@@ -102,7 +110,7 @@ export default function Footer() {
               Devices
             </h3>
             <ul className="mt-4 space-y-2">
-              {deviceLinks.map((link) => (
+              {[...deviceLinks, ...contentLinks].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-muted-foreground hover:text-brand transition-colors duration-200 hover:translate-x-0.5 inline-block">
                     {link.label}

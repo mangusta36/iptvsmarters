@@ -3432,7 +3432,7 @@ http://example.com/stream/bbc2.m3u8
       }
     ],
     keywords: ['IPTV for expats', 'watch home country TV abroad', 'IPTV international channels', 'expat TV streaming', 'IPTV overseas', 'watch British TV abroad', 'watch American TV abroad', 'IPTV for international viewers', 'IPTV subscription expat', 'best IPTV for expats', 'international IPTV channels', 'IPTV abroad', 'expat television solution'],
-    publishedAt: '2026-07-10',
+    publishedAt: '2026-07-08',
     readingTime: '16 min'
   },
   {
@@ -3659,7 +3659,7 @@ http://example.com/stream/bbc2.m3u8
       }
     ],
     keywords: ['IPTV vs cable', 'IPTV vs satellite', 'cable TV alternative', 'cut the cord', 'IPTV cost comparison', 'IPTV vs cable TV 2026', 'is IPTV cheaper than cable', 'cable TV savings', 'IPTV cable comparison', 'streaming vs cable', 'cable TV hidden fees', 'satellite TV alternative', 'best cable TV alternative', 'IPTV benefits', 'cord cutting 2026'],
-    publishedAt: '2026-07-12',
+    publishedAt: '2026-07-08',
     readingTime: '17 min'
   },
 ];

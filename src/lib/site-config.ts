@@ -4,8 +4,8 @@ export const siteConfig = {
   description:
     "Premium IPTV subscription with 25,000+ live channels, 100,000+ VOD movies & series in HD & 4K. Fast setup and 24/7 support.",
   tagline: "Your premium IPTV streaming experience",
-  url: "https://doubleclicktv.vip",
-  domain: "doubleclicktv.vip",
+  url: "https://www.doubleclicktv.vip",
+  domain: "www.doubleclicktv.vip",
   whatsappNumber: "+212776203783",
   email: "",
   address: "London, United Kingdom",
