@@ -17,9 +17,9 @@ const breadcrumbSchema = {
 }
 
 const faqItems = [
-  { question: "How can I contact doubleclick iptv?", answer: "All doubleclick iptv support is via WhatsApp at +212 776203783. It is the fastest way to get a response within 30 minutes." },
+  { question: "How can I contact doubleclick iptv?", answer: "All doubleclick iptv support is via WhatsApp at +44 7828714977. It is the fastest way to get a response within 30 minutes." },
   { question: "What are your opening hours?", answer: "The doubleclick iptv support team is available 24/7, 365 days a year. Send us a WhatsApp message anytime and we will respond promptly." },
-  { question: "How do I get a doubleclick iptv subscription?", answer: "Contact us directly via WhatsApp at +212 776203783 to choose your plan and receive your credentials. We will guide you through the process." },
+  { question: "How do I get a doubleclick iptv subscription?", answer: "Contact us directly via WhatsApp at +44 7828714977 to choose your plan and receive your credentials. We will guide you through the process." },
   { question: "What is the activation time for doubleclick iptv?", answer: "Your doubleclick iptv subscription is activated within 24 hours maximum after payment confirmation via WhatsApp. Most activations happen within 2 hours." },
   { question: "Can you help with doubleclick iptv installation?", answer: "Yes, our support team will guide you step by step through the doubleclick iptv installation process on any device. Setup takes less than 5 minutes." },
   { question: "What payment methods does doubleclick iptv accept?", answer: "We accept PayPal, bank transfer and cryptocurrencies for your doubleclick iptv subscription. All transactions are secure and your information is confidential." },
@@ -76,7 +76,7 @@ export default function ContactForm() {
               </div>
               <h2 className="text-2xl font-bold text-white">Contact us on WhatsApp</h2>
               <p className="mt-2 text-lg text-muted-foreground">
-                <span className="text-white font-semibold">+212 776203783</span>
+                <span className="text-white font-semibold">+44 7828714977</span>
               </p>
               <p className="mt-1 text-sm text-brand">Response guaranteed within 30 minutes</p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
@@ -112,7 +112,7 @@ export default function ContactForm() {
             <div className="rounded-2xl border border-border bg-card p-6 text-center">
               <MessageCircle className="mx-auto h-8 w-8 text-brand" />
               <h3 className="mt-3 font-semibold text-white">Single Point of Contact</h3>
-              <p className="mt-1 text-sm text-muted-foreground">+212 776203783</p>
+              <p className="mt-1 text-sm text-muted-foreground">+44 7828714977</p>
               <p className="text-xs text-muted-foreground mt-1">All support via WhatsApp</p>
             </div>
             <div className="rounded-2xl border border-border bg-card p-6 text-center">

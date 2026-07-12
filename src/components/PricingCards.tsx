@@ -6,6 +6,12 @@ interface PricingCardsProps {
   showAll?: boolean
 }
 
+const packageNames: Record<string, string> = {
+  basic: "Basic Package",
+  standard: "Silver Package",
+  ultimate: "Gold Package",
+}
+
 function formatPrice(price: number): string {
   return `$${price.toFixed(0)}`
 }
@@ -75,7 +81,7 @@ export default function PricingCards({ showAll = false }: PricingCardsProps) {
             </ul>
 
             <a
-              href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hi%20doubleclick%20iptv%2C%20I%27m%20interested%20in%20the%20${encodeURIComponent(plan.name)}%20plan`}
+              href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(`Hi doubleclicktv, I'm interested in the ${packageNames[plan.id] || plan.name} — ${plan.duration} — ${formatPrice(plan.price)}. Please send me more details.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className={`inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-3.5 text-sm font-bold transition-all duration-300 ${

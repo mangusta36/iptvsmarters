@@ -63,7 +63,7 @@ const devices = [
 
 const faqItems = [
   { question: "What is IPTV and how does it work?", answer: "IPTV (Internet Protocol Television) delivers TV channels and video content over your internet connection instead of traditional satellite or cable. With doubleclick iptv, you simply install an app on your device, enter your login credentials, and start watching instantly. No dish, no aerial, no contract required." },
-  { question: "How do I get a doubleclick iptv subscription?", answer: "Contact us on WhatsApp at +212 776203783 to choose your doubleclick iptv plan and receive your login credentials. Activation takes less than 24 hours." },
+  { question: "How do I get a doubleclick iptv subscription?", answer: "Contact us on WhatsApp at +44 7828714977 to choose your doubleclick iptv plan and receive your login credentials. Activation takes less than 24 hours." },
   { question: "What devices are compatible with doubleclick iptv?", answer: "doubleclick iptv works on all major devices: Samsung Smart TV (Tizen), LG (webOS), Sony Bravia, Android TV boxes, Amazon Fire TV Stick, iPhone/iPad, Android phones/tablets, Windows PC and Mac. One doubleclick iptv subscription covers all your devices." },
   { question: "What channels and content do you offer?", answer: "doubleclick iptv offers 25,000+ live TV channels including sports (Premier League, NFL, UFC, F1), movies, 24/7 news, kids shows, documentaries, music channels and international content in 40+ languages. Plus 100,000+ movies and series on demand." },
   { question: "What payment methods do you accept?", answer: "We accept PayPal, bank transfer and cryptocurrencies. Payment is secure and your information is confidential. Full details via WhatsApp." },
@@ -102,7 +102,7 @@ const howItWorks = [
   {
     step: "2",
     title: "Contact Us on WhatsApp",
-    desc: "Send us a message on WhatsApp at +212 776203783. We will help you choose the right plan, process your payment and send your login credentials.",
+    desc: "Send us a message on WhatsApp at +44 7828714977. We will help you choose the right plan, process your payment and send your login credentials.",
     icon: MessageCircle,
   },
   {
