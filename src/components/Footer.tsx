@@ -132,7 +132,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-brand transition-colors duration-200"
                 >
-                  WhatsApp : +44 7828714977
+                  WhatsApp : +212 753936672
                 </a>
               </li>
               <li>

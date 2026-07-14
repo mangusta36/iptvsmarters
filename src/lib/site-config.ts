@@ -6,7 +6,7 @@ export const siteConfig = {
   tagline: "Your premium IPTV streaming experience",
   url: "https://www.doubleclicktv.vip",
   domain: "www.doubleclicktv.vip",
-  whatsappNumber: "+447828714977",
+  whatsappNumber: "+212753936672",
   email: "",
   address: "London, United Kingdom",
   social: {
@@ -22,7 +22,7 @@ export const siteConfig = {
   logo: "/logo.png",
   ogImage: "/og-image.svg",
   trialText: "Get Trial",
-  trialLink: `https://wa.me/447828714977?text=Hi%20doubleclicktv%2C%20I%27d%20like%20to%20request%20a%20trial%20and%20check%20if%20my%20device%20is%20compatible.%20Can%20you%20help%20me%20get%20started%3F`,
+  trialLink: `https://wa.me/212753936672?text=Hi%20doubleclicktv%2C%20I%27d%20like%20to%20request%20a%20trial%20and%20check%20if%20my%20device%20is%20compatible.%20Can%20you%20help%20me%20get%20started%3F`,
   keywords: [
     "doubleclick iptv",
     "iptv subscription",
