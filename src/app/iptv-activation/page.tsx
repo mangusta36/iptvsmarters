@@ -8,8 +8,9 @@ import { siteConfig, absoluteUrl } from "@/lib/site-config"
 
 export const metadata: Metadata = {
   title: "IPTV Activation - Activation Guide",
-  description: "Guide to activating your doubleclick iptv subscription. Simple steps to activate your account within 24 hours and start watching your channels.",
+  description: "Activate your IPTV account after purchase: receive credentials, complete the first login, verify account status and contact support if access fails.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV Activation Guide - doubleclick iptv",
     description: "Simple step-by-step activation guide. Activate your IPTV subscription within 24 hours and start watching.",
     url: absoluteUrl("/iptv-activation"),
@@ -18,11 +19,11 @@ export const metadata: Metadata = {
 }
 
 const steps = [
-  { icon: CreditCard, title: "1. Choose your plan", desc: "Select the subscription that suits you (1, 2 or 3 devices) and contact us via WhatsApp." },
-  { icon: MessageCircle, title: "2. Make payment", desc: "Pay via PayPal, bank transfer or cryptocurrencies. Secure payment." },
-  { icon: Mail, title: "3. Receive your credentials", desc: "Within 24 hours maximum, you will receive your login credentials (username, password, Xtream Codes server)." },
-  { icon: Smartphone, title: "4. Configure the app", desc: "Install doubleclick iptv on your device, enter your credentials and enjoy the service." },
-  { icon: CheckCircle, title: "5. Enjoy streaming", desc: "Access 25,000+ channels, VOD and live sports in HD and 4K." },
+  { icon: CreditCard, title: "1. Confirm the order", desc: "Keep the order reference and the contact details used for the subscription." },
+  { icon: MessageCircle, title: "2. Confirm the account contact", desc: "Use the same private support conversation for order and activation questions." },
+  { icon: Mail, title: "3. Receive your credentials", desc: "Store the portal address, username and password securely. Do not post them in public messages." },
+  { icon: Smartphone, title: "4. Complete the first login", desc: "Use an already installed compatible player and enter the credentials exactly as supplied." },
+  { icon: CheckCircle, title: "5. Verify account status", desc: "Confirm that the account loads, note any expiry information and report an exact error if login fails." },
 ]
 
 const faqItems = [
@@ -77,11 +78,11 @@ export default function ActivationIPTVPage() {
           <div className="rounded-2xl border border-border bg-card p-6 flex gap-4">
             <AlertCircle className="h-6 w-6 shrink-0 text-brand" />
             <div>
-              <h3 className="font-semibold text-white">Need priority activation?</h3>
-              <p className="mt-1 text-sm text-muted-foreground">Contact our WhatsApp support for express activation within 1 hour.</p>
+              <h3 className="font-semibold text-white">Activation is not installation</h3>
+              <p className="mt-1 text-sm text-muted-foreground">This page covers account credentials and first login. Use the installation guide to download and configure a player.</p>
               <a href={`https://wa.me/${siteConfig.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brand-hover transition-colors">
                 <MessageCircle className="h-4 w-4" />
-                Priority activation
+                Ask about account activation
               </a>
             </div>
           </div>
@@ -93,6 +94,7 @@ export default function ActivationIPTVPage() {
           <div className="mt-8">
             <FAQAccordion items={faqItems} />
           </div>
+          <p className="mt-8 text-center text-muted-foreground">Need to install a player first? Follow the <Link href="/iptv-installation" className="text-brand hover:underline">device installation guide</Link>.</p>
         </div>
       </section>
       <CTASection title="Ready to activate your subscription?" subtitle="Contact us now to get started." />

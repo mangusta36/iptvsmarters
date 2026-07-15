@@ -8,8 +8,9 @@ import { siteConfig, absoluteUrl } from "@/lib/site-config"
 
 export const metadata: Metadata = {
   title: "IPTV Installation - Complete Guide",
-  description: "Complete IPTV installation guide for Samsung, LG, Sony Smart TVs, Android, iPhone, Windows and Mac. Set up your doubleclick iptv subscription in 5 minutes.",
+  description: "Install and configure an IPTV player on Samsung, LG, Android, iPhone, Windows or Mac, then continue to account activation for your first login.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV Installation Guide - doubleclick iptv",
     description: "Complete step-by-step installation guide for all devices. Set up your IPTV subscription in 5 minutes.",
     url: absoluteUrl("/iptv-installation"),
@@ -18,10 +19,10 @@ export const metadata: Metadata = {
 }
 
 const steps = [
-  { num: 1, icon: MessageCircle, title: "Choose your plan", desc: "Contact us via WhatsApp to choose your subscription and receive your login credentials.", color: "bg-brand/10 text-brand" },
+  { num: 1, icon: MessageCircle, title: "Identify the device", desc: "Record the brand, model and operating-system version so you can choose a compatible player.", color: "bg-brand/10 text-brand" },
   { num: 2, icon: Download, title: "Download the app", desc: "Install the doubleclick iptv app from the App Store, Google Play, Microsoft Store or Mac App Store depending on your device.", color: "bg-accent/10 text-accent" },
   { num: 3, icon: Settings, title: "Configure the app", desc: "Open the app, select 'Xtream Codes' or 'M3U URL', and enter the credentials received via WhatsApp.", color: "bg-brand/10 text-brand" },
-  { num: 4, icon: CheckCircle, title: "Enjoy streaming", desc: "Access 25,000+ live TV channels, 100,000+ VOD and live sports in HD and 4K.", color: "bg-success/10 text-success" },
+  { num: 4, icon: CheckCircle, title: "Test the player", desc: "Open the player and confirm it reaches the login screen. Account credentials are handled separately on the activation page.", color: "bg-success/10 text-success" },
 ]
 
 const deviceGuides = [
@@ -121,6 +122,7 @@ export default function InstallationIPTVPage() {
           <div className="mt-8">
             <FAQAccordion items={faqItems} />
           </div>
+          <p className="mt-8 text-center text-muted-foreground">Already installed the player? Continue to <Link href="/iptv-activation" className="text-brand hover:underline">account activation and first login</Link>.</p>
         </div>
       </section>
       <CTASection title="Need help with installation?" subtitle="Our technical team guides you step by step via WhatsApp." />

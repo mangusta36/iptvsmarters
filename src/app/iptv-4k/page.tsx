@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV 4K Ultra HD - Premium Streaming in Exceptional Quality",
   description: "IPTV 4K Ultra HD: enjoy ultra high definition streaming. Discover available 4K channels, technical requirements and necessary equipment for premium IPTV streaming.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV 4K Ultra HD - Premium Streaming in Exceptional Quality",
     description: "IPTV 4K Ultra HD: enjoy ultra high definition streaming. Discover available 4K channels and technical requirements.",
     url: absoluteUrl("/iptv-4k"),

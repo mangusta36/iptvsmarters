@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV Samsung Smart TV - Install doubleclick iptv on Tizen",
   description: "Complete guide to install doubleclick iptv on your Samsung Smart TV (Tizen OS). Enjoy thousands of live channels, VOD and catch-up TV in HD and 4K with a premium IPTV subscription.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV Samsung Smart TV - Install doubleclick iptv on Tizen",
     description: "Complete guide to install doubleclick iptv on your Samsung Smart TV (Tizen OS). Enjoy thousands of live channels, VOD and catch-up TV.",
     url: absoluteUrl("/iptv-samsung"),

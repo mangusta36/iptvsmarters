@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV Xtream Codes - Complete API Guide",
   description: "Complete guide to Xtream Codes API for doubleclick iptv: step-by-step configuration, advantages over M3U, and tutorial to connect your premium IPTV subscription.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV Xtream Codes - Complete API Guide",
     description: "Complete guide to Xtream Codes API for doubleclick iptv: step-by-step configuration, advantages over M3U.",
     url: absoluteUrl("/iptv-xtream-codes"),

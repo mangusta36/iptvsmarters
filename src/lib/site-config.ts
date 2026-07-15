@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "doubleclick iptv",
   shortName: "doubleclick iptv",
   description:
-    "Premium IPTV subscription with 25,000+ live channels, 100,000+ VOD movies & series in HD & 4K. Fast setup and 24/7 support.",
+    "Premium IPTV subscription with available live channels, on-demand content movies & series in HD & 4K. Fast setup and 24/7 support.",
   tagline: "Your premium IPTV streaming experience",
   url: "https://www.doubleclicktv.vip",
   domain: "www.doubleclicktv.vip",
@@ -15,8 +15,8 @@ export const siteConfig = {
     instagram: "https://instagram.com/doubleclicktv",
   },
   features: {
-    channels: "25,000+",
-    vod: "100,000+",
+    channels: "a broad selection",
+    vod: "On demand",
     support: "24/7",
   },
   logo: "/logo.png",

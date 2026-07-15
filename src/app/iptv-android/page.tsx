@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV Android - Install doubleclick iptv on Android TV & Mobile",
   description: "Complete guide to install doubleclick iptv on Android: smartphone, tablet, Android TV and TV Box. App available on Google Play and as APK for premium IPTV streaming.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV Android - Install doubleclick iptv on Android TV & Mobile",
     description: "Complete guide to install doubleclick iptv on Android: smartphone, tablet, Android TV and TV Box.",
     url: absoluteUrl("/iptv-android"),

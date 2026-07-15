@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Complete IPTV Guide - Everything About IPTV in 2026",
   description: "Complete IPTV guide: definition, how it works, required equipment, apps, HD/4K quality, VOD, catch-up TV and optimisation tips. Everything you need to know about IPTV streaming.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "Complete IPTV Guide - Everything About IPTV in 2026",
     description: "Complete IPTV guide: definition, how it works, equipment, apps, HD/4K quality, VOD, catch-up TV and optimisation tips.",
     url: absoluteUrl("/iptv-guide"),
@@ -141,9 +142,9 @@ export default function GuideIPTVPage() {
             <div>
               <h2 className="text-2xl font-bold text-white">Image quality: HD, Full HD and 4K</h2>
               <p className="mt-2 text-muted-foreground">
-                IPTV offers exceptional image quality. All our channels are available
-                in HD (720p) and Full HD (1080p), with a growing number of channels in 4K Ultra HD for sports,
-                movies and documentaries. The quality adapts automatically to your Internet speed.
+                Stream quality depends on the authorized source, player, device and connection.
+                HD commonly refers to 720p, Full HD to 1080p and 4K to 2160p. Some players can
+                adapt quality automatically when the source provides multiple options.
               </p>
               <p className="mt-4 text-muted-foreground">
                 Check out our dedicated pages for <Link href="/iptv-hd" className="text-brand hover:underline">HD quality</Link> and
@@ -157,9 +158,8 @@ export default function GuideIPTVPage() {
                 Beyond live TV, modern IPTV offers features that enrich your experience.
                 <Link href="/iptv-replay" className="text-brand hover:underline"> Catch-up TV (replay)</Link> lets
                 you watch programmes up to 7 days after broadcast.
-                <Link href="/iptv-vod" className="text-brand hover:underline"> VOD</Link> gives you access to over
-                100,000 movies and TV series on demand. The EPG guide displays channel schedules for the
-                next 7 days.
+                <Link href="/iptv-vod" className="text-brand hover:underline"> VOD</Link> explains on-demand
+                categories and playback. EPG and catch-up availability depend on the authorized provider.
               </p>
               <p className="mt-4 text-muted-foreground">
                 All these features are accessible directly from doubleclick iptv. The app
@@ -204,13 +204,13 @@ export default function GuideIPTVPage() {
             <FAQAccordion items={faqItems} />
           </div>
           <p className="mt-8 text-center text-muted-foreground">
-            Have other questions? Check our <Link href="/faq" className="text-brand hover:underline">FAQ</Link> or contact our <Link href="/support" className="text-brand hover:underline">support</Link>.
+            Compare compatible players in our <Link href="/blog/iptv-players-comparison" className="text-brand hover:underline">player guide</Link>, learn about <Link href="/blog/iptv-4k-ultra-hd-streaming" className="text-brand hover:underline">4K bitrate and device requirements</Link>, or contact <Link href="/support" className="text-brand hover:underline">support</Link>.
           </p>
         </div>
       </section>
       <CTASection
         title="Ready to discover IPTV with doubleclick iptv?"
-        subtitle="Thousands of live channels, unlimited VOD and catch-up TV. Contact us on WhatsApp to learn more."
+        subtitle="Use this beginner hub to choose a device, understand installation and find the right specialist guide."
       />
     </>
   )

@@ -32,10 +32,14 @@ const staticRoutes = [
   { path: "/blog", priority: 0.7, changeFrequency: "weekly" as const },
 ]
 
+// Update this value only when static page content changes. Using the build time
+// made every deployment look like a site-wide content update to crawlers.
+const staticContentLastModified = new Date("2026-07-14T00:00:00.000Z")
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries = staticRoutes.map((route) => ({
     url: `${siteConfig.url}${route.path}`,
-    lastModified: new Date(),
+    lastModified: staticContentLastModified,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }))

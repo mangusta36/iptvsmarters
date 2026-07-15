@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react"
 import { Search, Film } from "lucide-react"
+import Link from "next/link"
 import MediaCard from "@/components/MediaCard"
 import SchemaMarkup from "@/components/SchemaMarkup"
 import CTASection from "@/components/CTASection"
@@ -111,9 +112,18 @@ export default function FilmsPage() {
         </div>
       </section>
 
+      <section className="py-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white">A focused space for discovering movies</h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">This page is designed for movie discovery rather than account setup. Use search, genre and release sorting to narrow the sample catalogue, then confirm availability in your authorized account. Titles and picture quality can vary by region, device and licensing period.</p>
+          <h2 className="mt-8 text-2xl font-bold text-white">Prepare for a movie night</h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">For consistent playback, test the selected device in advance, use Ethernet when possible and choose a quality level your connection can sustain. If you want to browse films and episodic programmes together, visit the <Link href="/vod" className="text-brand hover:underline">main VOD hub</Link>. To understand how on-demand playback works inside an IPTV player, read the <Link href="/iptv-vod" className="text-brand hover:underline">IPTV VOD explainer</Link>.</p>
+        </div>
+      </section>
+
       <CTASection
         title="Access All Our Movies in Streaming"
-        subtitle="Subscribe to enjoy the full catalog in HD and 4K."
+        subtitle="Explore movie discovery features and confirm title availability in your authorized catalogue."
       />
     </>
   )

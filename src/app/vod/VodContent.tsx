@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react"
 import { Search, Film, Tv, TrendingUp, Star, Zap } from "lucide-react"
+import Link from "next/link"
 import MediaCard from "@/components/MediaCard"
 import SchemaMarkup from "@/components/SchemaMarkup"
 import CTASection from "@/components/CTASection"
@@ -136,7 +137,14 @@ export default function VODPage() {
           </div>
         </div>
       </section>
-      <CTASection title="Unlimited access to the full VOD catalogue" subtitle="Movies, series, new releases and trending in HD & 4K." />
+      <section className="py-20 bg-muted/50">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white">Your VOD discovery hub</h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">Use this hub when you want to search movies and series together. The dedicated <Link href="/films" className="text-brand hover:underline">movie page</Link> emphasizes film discovery, while the <Link href="/series" className="text-brand hover:underline">series page</Link> focuses on episodic organization. Catalogue entries shown here are examples; confirm current availability in your authorized account.</p>
+          <p className="mt-4 text-muted-foreground leading-relaxed">If you need help understanding the difference between live TV, catch-up and on-demand playback, read the <Link href="/iptv-vod" className="text-brand hover:underline">IPTV VOD explainer</Link> or the <Link href="/iptv-replay" className="text-brand hover:underline">catch-up guide</Link>.</p>
+        </div>
+      </section>
+      <CTASection title="Explore on-demand discovery" subtitle="Search movies and series, then confirm current availability in your authorized catalogue." />
     </>
   )
 }

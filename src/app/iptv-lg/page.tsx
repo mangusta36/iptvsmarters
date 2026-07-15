@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV LG Smart TV - Install doubleclick iptv on webOS",
   description: "Complete guide to install doubleclick iptv on your LG Smart TV (webOS). Enjoy thousands of channels, VOD and catch-up TV on your LG OLED, NanoCell and UHD TVs with a premium IPTV subscription.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV LG Smart TV - Install doubleclick iptv on webOS",
     description: "Complete guide to install doubleclick iptv on your LG Smart TV (webOS). Enjoy thousands of channels, VOD and catch-up TV.",
     url: absoluteUrl("/iptv-lg"),

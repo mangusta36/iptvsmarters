@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV Windows - Watch IPTV on PC Windows 10 and 11",
   description: "Complete guide to install and set up IPTV on Windows 10 and 11. Use doubleclick iptv, VLC or MyIPTV Player on your PC to watch your favourite channels with a premium IPTV service.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV Windows - Watch IPTV on PC Windows 10 and 11",
     description: "Complete guide to install and set up IPTV on Windows 10 and 11. Use doubleclick iptv, VLC or MyIPTV Player.",
     url: absoluteUrl("/iptv-windows"),

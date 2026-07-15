@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV Sony Bravia - Install doubleclick iptv on Android",
   description: "Complete guide to install doubleclick iptv on your Sony Bravia (Android TV / Google TV). Enjoy thousands of live channels, VOD and 4K with a premium IPTV subscription.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV Sony Bravia - Install doubleclick iptv on Android TV",
     description: "Complete guide to install doubleclick iptv on your Sony Bravia (Android TV / Google TV). Enjoy thousands of live channels, VOD and 4K.",
     url: absoluteUrl("/iptv-sony"),

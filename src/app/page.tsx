@@ -7,7 +7,6 @@ import ValueProposition from "@/components/ValueProposition"
 import PricingCards from "@/components/PricingCards"
 import DeviceCard from "@/components/DeviceCard"
 import SchemaMarkup from "@/components/SchemaMarkup"
-import Testimonials from "@/components/Testimonials"
 import FAQAccordion from "@/components/FAQAccordion"
 import CTASection from "@/components/CTASection"
 import { siteConfig, absoluteUrl } from "@/lib/site-config"
@@ -15,26 +14,27 @@ import { trendingMedia } from "@/lib/media-data"
 
 export const metadata: Metadata = {
   title: "doubleclick iptv | Premium IPTV Subscription",
-  description: "doubleclick iptv premium IPTV subscription: 25,000+ live channels, 100,000+ VOD movies & series in HD & 4K. Watch live sports, movies, TV shows on any device. Contact us for instant setup.",
+  description: "doubleclick iptv premium IPTV subscription: available live channels, on-demand content movies & series in HD & 4K. Watch live sports, movies, TV shows on any device. Contact us for instant setup.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "doubleclick iptv | Premium IPTV Subscription",
-    description: "doubleclick iptv premium IPTV service: 25,000+ live channels, 100,000+ VOD movies & series with HD & 4K quality. Works on Smart TV, Fire Stick, Android, iOS. 24/7 support.",
+    description: "doubleclick iptv premium IPTV service: available live channels, on-demand content movies & series with HD & 4K quality. Works on Smart TV, Fire Stick, Android, iOS. 24/7 support.",
     url: absoluteUrl("/"),
   },
   alternates: { canonical: absoluteUrl("/") },
 }
 
 const features = [
-  { icon: Tv, title: "25,000+ Channels", desc: "Live TV channels from around the world : sports, movies, documentaries, kids, music, news 24/7 on doubleclick iptv." },
-  { icon: Film, title: "100,000+ VOD & Series", desc: "Latest movies, classics, popular series and documentaries in unlimited streaming. Updated weekly with the doubleclick iptv service." },
+  { icon: Tv, title: "available channels", desc: "Live TV channels from around the world : sports, movies, documentaries, kids, music, news 24/7 on doubleclick iptv." },
+  { icon: Film, title: "on-demand content & Series", desc: "Latest movies, classics, popular series and documentaries in unlimited streaming. Updated weekly with the doubleclick iptv service." },
   { icon: Monitor, title: "HD & 4K Ultra HD", desc: "Streaming in HD, Full HD and 4K with automatic bitrate adaptation technology for doubleclick iptv subscribers." },
   { icon: Shield, title: "Anti-Buffer Technology", desc: "Optimized servers and anti-buffer technology for smooth, interruption-free doubleclick iptv streaming." },
   { icon: Zap, title: "5-Minute Setup", desc: "Step-by-step guided doubleclick iptv setup. Compatible with IPTV apps, TiviMate and VLC." },
-  { icon: Clock, title: "24/7 Priority Support", desc: "doubleclick iptv support team available 7 days a week via WhatsApp. Response within 30 minutes." },
+  { icon: Clock, title: "24/7 Priority Support", desc: "doubleclick iptv support team available 7 days a week via WhatsApp. Response times vary with request volume." },
   { icon: Smartphone, title: "Multi-Platform", desc: "Works on Smart TV, Android, iOS, Windows, Mac, Fire TV Stick and Android TV Box with your doubleclick iptv subscription." },
   { icon: Wifi, title: "Replay & Catch-up TV", desc: "Watch your shows up to 7 days after broadcast with doubleclick iptv. Never miss a program again." },
   { icon: Repeat, title: "Built-in EPG", desc: "Electronic Program Guide for all channels. View real-time scheduling on your doubleclick iptv service." },
-  { icon: Server, title: "High-Speed Servers", desc: "State-of-the-art server infrastructure with 99.9% uptime guarantee for doubleclick iptv streaming." },
+  { icon: Server, title: "High-Speed Servers", desc: "State-of-the-art server infrastructure with monitored service availability for doubleclick iptv streaming." },
   { icon: Tablet, title: "Multi-Screen", desc: "Up to 3 simultaneous connections depending on your plan. Watch together as a family with doubleclick iptv." },
   { icon: Laptop, title: "Xtream Codes & M3U", desc: "Full support for Xtream Codes API and M3U playlists for maximum compatibility with doubleclick iptv." },
 ]
@@ -65,7 +65,7 @@ const faqItems = [
   { question: "What is IPTV and how does it work?", answer: "IPTV (Internet Protocol Television) delivers TV channels and video content over your internet connection instead of traditional satellite or cable. With doubleclick iptv, you simply install an app on your device, enter your login credentials, and start watching instantly. No dish, no aerial, no contract required." },
   { question: "How do I get a doubleclick iptv subscription?", answer: "Contact us on WhatsApp at +212 753936672 to choose your doubleclick iptv plan and receive your login credentials. Activation takes less than 24 hours." },
   { question: "What devices are compatible with doubleclick iptv?", answer: "doubleclick iptv works on all major devices: Samsung Smart TV (Tizen), LG (webOS), Sony Bravia, Android TV boxes, Amazon Fire TV Stick, iPhone/iPad, Android phones/tablets, Windows PC and Mac. One doubleclick iptv subscription covers all your devices." },
-  { question: "What channels and content do you offer?", answer: "doubleclick iptv offers 25,000+ live TV channels including sports (Premier League, NFL, UFC, F1), movies, 24/7 news, kids shows, documentaries, music channels and international content in 40+ languages. Plus 100,000+ movies and series on demand." },
+  { question: "What channels and content do you offer?", answer: "doubleclick iptv offers available live channels including sports (Premier League, NFL, UFC, F1), movies, 24/7 news, kids shows, documentaries, music channels and international content in 40+ languages. Plus an on-demand movie and series catalogue on demand." },
   { question: "What payment methods do you accept?", answer: "We accept PayPal, bank transfer and cryptocurrencies. Payment is secure and your information is confidential. Full details via WhatsApp." },
   { question: "Can I change my plan during my subscription?", answer: "Yes, you can upgrade to a higher doubleclick iptv plan at any time. The difference will be billed pro-rata. Downgrades take effect at renewal." },
   { question: "Does the doubleclick iptv subscription work abroad?", answer: "Yes, your doubleclick iptv subscription works worldwide. An internet connection is all you need, regardless of your location. Perfect for travellers and expats." },
@@ -96,7 +96,7 @@ const howItWorks = [
   {
     step: "1",
     title: "Choose Your Plan",
-    desc: "Select the doubleclick iptv subscription that fits your needs: 1, 2 or 3 simultaneous connections. All plans include 25,000+ channels, 100,000+ VOD and 24/7 support.",
+    desc: "Select the doubleclick iptv subscription that fits your needs: 1, 2 or 3 simultaneous connections. All plans include available channels, on-demand content and 24/7 support.",
     icon: Layout,
   },
   {
@@ -114,9 +114,9 @@ const howItWorks = [
 ]
 
 const trustPoints = [
-  { icon: Server, title: "99.9% Uptime", desc: "Enterprise-grade server infrastructure with redundant systems ensuring your doubleclick iptv streams are always available." },
+  { icon: Server, title: "Monitored Availability", desc: "Enterprise-grade server infrastructure with redundant systems ensuring your doubleclick iptv streams are always available." },
   { icon: Lock, title: "Secure & Private", desc: "Your data is encrypted and protected when you use the doubleclick iptv service. We do not share your personal information with third parties." },
-  { icon: LifeBuoy, title: "24/7 Technical Support", desc: "Real human doubleclick iptv support team available around the clock via WhatsApp. Average response time under 30 minutes." },
+  { icon: LifeBuoy, title: "24/7 Technical Support", desc: "Real human doubleclick iptv support team available around the clock via WhatsApp. Response times vary with request volume." },
   { icon: Signal, title: "Optimized Streaming", desc: "Dedicated streaming servers with automatic load balancing and anti-buffer technology for smooth doubleclick iptv playback." },
   { icon: HardDrive, title: "Regular Content Updates", desc: "New channels, movies and series added weekly to the doubleclick iptv service. Our VOD library grows continuously." },
   { icon: Layers, title: "Multi-Protocol Support", desc: "Compatible with Xtream Codes API, M3U playlists, and all major IPTV player apps including TiviMate and VLC for doubleclick iptv streaming." },
@@ -128,7 +128,7 @@ export default function HomePage() {
       <SchemaMarkup jsonLd={breadcrumbSchema} />
       <SchemaMarkup jsonLd={faqSchema} />
       <HeroSection
-        title="doubleclick iptv : 25,000+ Channels in HD & 4K"
+        title="doubleclick iptv : available channels in HD & 4K"
         subtitle="doubleclick iptv : premium IPTV subscription with unlimited VOD, live sports and 24/7 support. Easy setup on all your devices."
         badge="24/7 Customer Support"
         image
@@ -174,7 +174,7 @@ export default function HomePage() {
             </span>
             <h2 className="text-3xl font-bold text-white sm:text-4xl">Choose Your doubleclick iptv Plan</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Select the perfect plan for your needs. All plans include 25,000+ channels, 100,000+ VOD, and 24/7 support.
+              Select the perfect plan for your needs. All plans include available channels, on-demand content, and 24/7 support.
             </p>
           </div>
           <PricingCards />
@@ -217,7 +217,7 @@ export default function HomePage() {
             </span>
             <h2 className="text-3xl font-bold text-white sm:text-4xl">doubleclick iptv Channel Categories</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              doubleclick iptv gives you 25,000+ channels covering every genre imaginable. Here is a glimpse of what is included in every doubleclick iptv subscription.
+              doubleclick iptv gives you available channels covering every genre imaginable. Here is a glimpse of what is included in every doubleclick iptv subscription.
             </p>
           </div>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -269,13 +269,13 @@ export default function HomePage() {
                 <tbody className="divide-y divide-border">
                   <tr className="hover:bg-muted/20 transition-colors">
                     <td className="p-4 text-white font-medium">Channels</td>
-                    <td className="p-4 text-center text-brand">25,000+</td>
+                    <td className="p-4 text-center text-brand">a broad selection</td>
                     <td className="p-4 text-center text-muted-foreground">200-500</td>
                     <td className="p-4 text-center text-muted-foreground">500-1000</td>
                   </tr>
                   <tr className="hover:bg-muted/20 transition-colors">
                     <td className="p-4 text-white font-medium">VOD Library</td>
-                    <td className="p-4 text-center text-brand">100,000+</td>
+                    <td className="p-4 text-center text-brand">Varies by catalogue</td>
                     <td className="p-4 text-center text-muted-foreground">Limited</td>
                     <td className="p-4 text-center text-muted-foreground">Limited</td>
                   </tr>
@@ -391,7 +391,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Testimonials />
 
       <section className="py-24 relative overflow-hidden bg-muted/50">
         <div className="absolute inset-0 bg-gradient-to-b from-brand/5 to-transparent" />

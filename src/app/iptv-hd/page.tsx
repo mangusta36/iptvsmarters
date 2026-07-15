@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV HD and Full HD - High Definition Quality for your channels",
   description: "IPTV HD and Full HD: exceptional image quality for all your channels. Compare HD, Full HD and 4K. Recommended speed and optimisation for the best IPTV streaming experience.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV HD and Full HD - High Definition Quality for your channels",
     description: "IPTV HD and Full HD: exceptional image quality for all your channels. Compare HD, Full HD and 4K.",
     url: absoluteUrl("/iptv-hd"),
@@ -152,7 +153,7 @@ export default function IPTVHDPage() {
             <FAQAccordion items={faqItems} />
           </div>
           <p className="mt-8 text-center text-muted-foreground">
-            Discover our guide on <Link href="/iptv-4k" className="text-brand hover:underline">IPTV 4K Ultra HD</Link> and the <Link href="/iptv-guide" className="text-brand hover:underline">complete IPTV guide</Link>.
+            This service page explains available resolution options. For educational bitrate and network testing, read the <Link href="/blog/iptv-4k-ultra-hd-streaming" className="text-brand hover:underline">4K streaming guide</Link>; for setup basics, use the <Link href="/iptv-guide" className="text-brand hover:underline">beginner hub</Link>.
           </p>
         </div>
       </section>

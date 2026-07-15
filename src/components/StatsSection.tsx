@@ -4,7 +4,7 @@ const stats = [
   { icon: Tv, value: "25 000+", label: "Live TV Channels" },
   { icon: Film, value: "100 000+", label: "Movies & Series VOD" },
   { icon: HeadphonesIcon, value: "24/7", label: "Customer Support" },
-  { icon: Globe, value: "99.9%", label: "Uptime Guarantee" },
+  { icon: Globe, value: "Monitored", label: "Service Availability" },
 ]
 
 export default function StatsSection() {

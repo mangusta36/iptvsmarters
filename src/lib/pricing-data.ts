@@ -18,7 +18,7 @@ export const pricingPlans: PricingPlan[] = [
     popular: false,
     features: [
       "26,000+ Live Channels",
-      "100,000+ VODs",
+      "on-demand content",
       "4K & FHD Quality",
       "Anti-Freeze Servers",
       "All Devices Supported",
@@ -34,7 +34,7 @@ export const pricingPlans: PricingPlan[] = [
     popular: false,
     features: [
       "26,000+ Live Channels",
-      "100,000+ VODs",
+      "on-demand content",
       "4K & FHD Quality",
       "Anti-Freeze Servers",
       "All Devices Supported",
@@ -50,7 +50,7 @@ export const pricingPlans: PricingPlan[] = [
     popular: true,
     features: [
       "26,000+ Live Channels",
-      "100,000+ VODs",
+      "on-demand content",
       "4K & FHD Quality",
       "Anti-Freeze Servers",
       "All Devices Supported",

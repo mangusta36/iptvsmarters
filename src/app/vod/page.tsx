@@ -4,8 +4,9 @@ import VodContent from "./VodContent"
 
 export const metadata: Metadata = {
   title: "VOD - Movies & TV Series in Streaming HD & 4K",
-  description: "Browse our VOD catalogue: latest movies, trending TV series, new releases and classics in streaming. Access all video on demand with your IPTV subscription.",
+  description: "Use our VOD discovery hub to browse movie and series examples, understand catalogue organization and access practical on-demand playback guidance.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "VOD - doubleclick iptv Movies & TV Series",
     description: "Browse the full VOD catalogue: movies, series, new releases and trending in HD & 4K.",
     url: absoluteUrl("/vod"),

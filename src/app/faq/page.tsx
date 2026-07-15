@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "IPTV FAQ - Frequently Asked Questions 2026",
   description: "Complete doubleclick iptv FAQ: answers about IPTV subscription, installation on Smart TV, Fire Stick, Android, iOS. Channel lists, pricing, device compatibility, troubleshooting, EPG, catch-up TV and more.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "doubleclick iptv FAQ - Frequently Asked Questions",
     description: "All answers about doubleclick iptv streaming, subscription, installation and troubleshooting.",
     url: absoluteUrl("/faq"),
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 const subscriptionFaq = [
   { question: "How do I subscribe to a doubleclick iptv plan?", answer: "Contact us via WhatsApp to choose your offer. Once payment is confirmed, you will receive your login credentials within 24 hours maximum." },
   { question: "What payment methods are accepted for doubleclick iptv?", answer: "We accept PayPal, bank transfer and cryptocurrencies for your doubleclick iptv subscription. Payment is fully secure. Contact us via WhatsApp for more information." },
-  { question: "Can I cancel my doubleclick iptv subscription at any time?", answer: "Yes, no commitment. You can cancel your doubleclick iptv plan at any time with no extra fees. No refund is made for the current period." },
+  { question: "Can I cancel my doubleclick iptv subscription at any time?", answer: "Yes. You can cancel without a cancellation fee. A first purchase may qualify for the seven-day satisfaction guarantee; after that period, cancellation stops future renewal without refunding the current period." },
   { question: "How do I contact doubleclick iptv support?", answer: "Contact us via WhatsApp for any questions. The doubleclick iptv team is available 24/7 to help you with your subscription." },
   { question: "Can I upgrade from one doubleclick iptv plan to another?", answer: "Yes, you can upgrade to a higher doubleclick iptv plan at any time. The difference will be calculated pro rata. Downgrades take effect at renewal." },
   { question: "What is the cost of a doubleclick iptv subscription?", answer: "Our doubleclick iptv plans start from £37 for 3 months. We offer Basic (1 connection), Standard (2 connections) and Ultimate VIP (3 connections)." },
@@ -54,21 +55,21 @@ const featuresFaq = [
   { question: "What is catch-up TV and replay on doubleclick iptv?", answer: "Catch-up TV on doubleclick iptv lets you watch shows that aired up to 7 days ago. If you missed a program, simply find it in the EPG and click to replay." },
   { question: "What is multi-screen viewing on doubleclick iptv?", answer: "Multi-screen on doubleclick iptv allows you to watch up to 4 channels simultaneously on a single screen, split into quarters. Available on select IPTV apps." },
   { question: "Can I record shows from doubleclick iptv?", answer: "Yes, many IPTV apps support recording with your doubleclick iptv subscription. You can record live shows to your device's storage or external USB drive for later viewing." },
-  { question: "Does doubleclick iptv offer Video on Demand (VOD)?", answer: "Yes, doubleclick iptv has 100,000+ movies and series available on demand. Content is updated weekly with the latest releases in HD and 4K." },
+  { question: "Does doubleclick iptv offer Video on Demand (VOD)?", answer: "Yes, doubleclick iptv has an on-demand movie and series catalogue available on demand. Content is updated weekly with the latest releases in HD and 4K." },
   { question: "What internet speed do I need for doubleclick iptv?", answer: "Minimum 10 Mbps for HD streaming, 25 Mbps for 4K Ultra HD on doubleclick iptv. A wired Ethernet connection is recommended over WiFi for the most stable experience." },
-  { question: "Does doubleclick iptv include sports channels?", answer: "Yes, doubleclick iptv offers comprehensive sports coverage including Premier League, Champions League, NFL, NBA, UFC, Formula 1, MotoGP, tennis Grand Slams and more." },
+  { question: "Can I use IPTV to watch sports?", answer: "A compatible player can display sports streams included in an authorized subscription. Availability depends on the provider's licensed catalogue and your region." },
   { question: "Are there parental controls on doubleclick iptv?", answer: "Yes, most IPTV apps include parental control features with your doubleclick iptv subscription, including PIN-protected channels and content filtering." },
 ]
 
 const troubleFaq = [
   { question: "What if the screen is black on doubleclick iptv?", answer: "Check your internet connection, restart the app and your device. Verify your doubleclick iptv subscription is active. If the problem persists, contact our support." },
-  { question: "Why is my doubleclick iptv connection buffering?", answer: "Buffering on doubleclick iptv can be caused by a slow internet connection, WiFi congestion, ISP throttling, or an overloaded server. Try: Ethernet connection, close background apps, reduce video quality, use a VPN." },
+  { question: "Why is my doubleclick iptv connection buffering?", answer: "Buffering can be caused by limited bandwidth, Wi-Fi congestion, background downloads or a temporary service issue. Test with Ethernet, close background apps and reduce video quality." },
   { question: "How can I improve video quality on doubleclick iptv?", answer: "Ensure you have a stable connection (10 Mbps for HD, 25 Mbps for 4K on doubleclick iptv). Use a wired connection rather than WiFi. Select the highest quality in the app settings." },
   { question: "What if doubleclick iptv stops working?", answer: "Check your internet connection, restart the device, reinstall the app. Verify your doubleclick iptv subscription has not expired. If the problem persists, contact our 24/7 support via WhatsApp." },
   { question: "My doubleclick iptv login credentials are not working?", answer: "Check that you have entered them correctly with no typos. Ensure Caps Lock is off. Contact us via WhatsApp for a quick doubleclick iptv password reset if needed." },
   { question: "Channels are loading but no audio on doubleclick iptv?", answer: "Try switching the audio track in the app settings. Some channels broadcast multiple audio languages. Also check your device volume and audio output settings." },
   { question: "Why are some channels missing from my doubleclick iptv list?", answer: "Your playlist may need refreshing. Try updating the channel list in your app settings. If channels are still missing, contact doubleclick iptv support." },
-  { question: "Can a VPN improve my doubleclick iptv experience?", answer: "Yes, a VPN can help if your ISP is throttling streaming traffic on doubleclick iptv. It encrypts your connection and prevents your ISP from identifying and slowing down IPTV streams." },
+  { question: "Can I use a VPN with an IPTV player?", answer: "A VPN can protect traffic on untrusted networks, but it may also reduce speed. It does not make unauthorized content lawful or replace an authorized subscription." },
 ]
 
 const allFaqItems = [...subscriptionFaq, ...installFaq, ...deviceFaq, ...featuresFaq, ...troubleFaq]

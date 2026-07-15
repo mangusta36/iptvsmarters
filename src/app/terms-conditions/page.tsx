@@ -23,11 +23,11 @@ export default function CGVPage() {
           <h2 className="text-lg font-semibold text-white">Article 4 : Activation time</h2>
           <p>Subscription activation occurs within a maximum of 24 business hours after receipt of payment.</p>
           <h2 className="text-lg font-semibold text-white">Article 5 : Right of withdrawal</h2>
-          <p>In accordance with applicable law, the customer has a period of 14 days to exercise their right of withdrawal. However, for digital services whose execution has begun with the customer&apos;s agreement, this right may be limited.</p>
+          <p>Customers may request a refund within seven days of the initial purchase under the satisfaction guarantee. Requests must be submitted through the support channel with sufficient information to identify the order. This commercial guarantee is separate from any mandatory consumer rights that apply in the customer&apos;s jurisdiction.</p>
           <h2 className="text-lg font-semibold text-white">Article 6 : Liability</h2>
           <p>doubleclick iptv is committed to providing a quality service. However, the provider&apos;s liability shall not be engaged in cases of force majeure, technical problems beyond its control, or improper use of the service by the customer.</p>
           <h2 className="text-lg font-semibold text-white">Article 7 : Cancellation</h2>
-          <p>The customer may cancel their subscription at any time without charge. Cancellation takes effect immediately. No refund is made for the current period.</p>
+          <p>The customer may cancel at any time without a cancellation fee. After the seven-day satisfaction period, cancellation stops future renewal but does not create a refund for the remaining current period, except where required by applicable law.</p>
         </div>
       </div>
     </section>

@@ -3,34 +3,33 @@ import Link from "next/link"
 import SchemaMarkup from "@/components/SchemaMarkup"
 import FAQAccordion from "@/components/FAQAccordion"
 import CTASection from "@/components/CTASection"
-import { siteConfig, absoluteUrl } from "@/lib/site-config"
+import { absoluteUrl } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "IPTV UK - Premium IPTV Subscription for UK Households",
-  description: "Premium IPTV subscription with UK channels (BBC, ITV, Channel 4, Sky) and international channels in HD and 4K. Optimised servers for UK users with premium IPTV streaming.",
+  title: "IPTV France - Configuration et compatibilité des appareils",
+  description: "Guide IPTV pour la France : appareils compatibles, configuration légale, qualité de connexion et assistance pour utiliser votre propre abonnement autorisé.",
   openGraph: {
-    title: "IPTV UK - Premium IPTV Subscription for UK Households",
-    description: "Premium IPTV subscription with UK channels (BBC, ITV, Channel 4, Sky) and international channels in HD and 4K.",
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
+    title: "IPTV France - Configuration et compatibilité",
+    description: "Conseils pratiques pour configurer un abonnement IPTV autorisé sur vos appareils en France.",
     url: absoluteUrl("/iptv-france"),
   },
   alternates: { canonical: absoluteUrl("/iptv-france") },
 }
 
 const faqItems = [
-  { question: "What UK channels are available?", answer: "We offer all major UK channels: BBC One, BBC Two, ITV, Channel 4, Channel 5, Sky One, Sky Sports, BT Sport, UKTV channels, and many more." },
-  { question: "Can I watch live UK sports?", answer: "Yes, all major sports competitions are available: Premier League, Champions League, FA Cup, Six Nations, Wimbledon, Formula 1, and international matches." },
-  { question: "Are there local UK channels?", answer: "Yes, we include BBC regional channels and major local UK channels." },
-  { question: "Is the service optimised for the UK?", answer: "Yes, our servers are optimised to provide the best experience for UK users with minimal latency and English-speaking customer support." },
-  { question: "Can I pay in pounds?", answer: "Yes, payments are accepted in pounds sterling. We offer several secure payment methods." },
-  { question: "What quality are the UK channels?", answer: "All UK channels are available in HD (720p/1080p) and some in 4K Ultra HD. Quality is automatically adapted to your connection speed." },
+  { question: "L’IPTV est-elle légale en France ?", answer: "La technologie IPTV est légale. Vous devez toutefois utiliser un service autorisé et respecter les droits de diffusion applicables au contenu que vous regardez." },
+  { question: "Quels appareils puis-je utiliser en France ?", answer: "Les téléviseurs Samsung, LG et Android TV, ainsi que les téléphones, tablettes, ordinateurs et boîtiers compatibles, peuvent utiliser un lecteur IPTV adapté." },
+  { question: "Quel débit internet faut-il prévoir ?", answer: "Une connexion stable est essentielle. En pratique, prévoyez environ 10 Mbit/s pour la HD et 25 Mbit/s ou plus pour la 4K, par flux actif." },
+  { question: "L’assistance peut-elle aider à la configuration ?", answer: "Oui. Préparez le modèle de votre appareil, sa version logicielle et le message d’erreur éventuel afin d’obtenir une aide de configuration précise." },
 ]
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
-    { "@type": "ListItem", position: 2, name: "IPTV UK", item: absoluteUrl("/iptv-france") },
+    { "@type": "ListItem", position: 1, name: "Accueil", item: absoluteUrl("/") },
+    { "@type": "ListItem", position: 2, name: "IPTV France", item: absoluteUrl("/iptv-france") },
   ],
 }
 
@@ -41,149 +40,63 @@ export default function IPTVFrancePage() {
       <section className="py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
-              IPTV UK
-            </span>
-            <h1 className="text-4xl font-bold text-white sm:text-5xl">IPTV UK</h1>
+            <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">Guide France</span>
+            <h1 className="text-4xl font-bold text-white sm:text-5xl">IPTV en France : configuration et compatibilité</h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Discover the best IPTV service for UK viewers with doubleclick iptv. Enjoy all your favourite
-              UK channels (BBC, ITV, Channel 4, Sky), live sports, and the latest movie releases in streaming.
-              A service designed for UK households with English-speaking support and optimised servers.
+              Configurez un abonnement IPTV autorisé sur vos appareils en France, avec des conseils sur la compatibilité, la connexion internet et l’assistance.
             </p>
           </div>
+
           <div className="mt-12 space-y-12">
             <div>
-              <h2 className="text-2xl font-bold text-white">UK channels available</h2>
-              <p className="mt-2 text-muted-foreground">
-                Access over 50 UK live channels with your doubleclick iptv subscription. Get
-                all the major UK TV channels:
-              </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <strong className="text-white">General channels:</strong> BBC One, BBC Two, ITV, Channel 4, Channel 5, Sky One, UKTV Gold, Dave, E4, More4, 5USA
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <strong className="text-white">News channels:</strong> BBC News, Sky News, ITV News, Channel 4 News, CNN, Euronews
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <strong className="text-white">Sports channels:</strong> Sky Sports Main Event, Sky Sports Premier League, BT Sport 1, BT Sport 2, Eurosport 1, Eurosport 2
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <strong className="text-white">Kids channels:</strong> CBeebies, CBBC, Cartoon Network, Disney Channel, Nickelodeon, Boomerang, CITV
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <strong className="text-white">Local channels:</strong> BBC regional channels, ITV regional, and other local UK channels
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold text-white">UK live sports</h2>
-              <p className="mt-2 text-muted-foreground">
-                Never miss any sporting event with doubleclick iptv. All UK and international
-                competitions are available live and on catch-up. Football with the Premier League,
-                the Champions League, the FA Cup, and the EFL. Rugby with the Six Nations and Premiership Rugby.
-                Tennis with Wimbledon. Cycling with the Tour de France and the Giro d&apos;Italia.
+              <h2 className="text-2xl font-bold text-white">Choisir un appareil compatible</h2>
+              <p className="mt-2 text-muted-foreground leading-relaxed">
+                Le bon lecteur dépend du système de votre appareil. Les téléviseurs Samsung utilisent Tizen, les modèles LG utilisent webOS et de nombreux téléviseurs Sony ou boîtiers multimédias utilisent Android TV. Vérifiez toujours le modèle, la version du système et la disponibilité du lecteur dans la boutique officielle avant de commencer.
               </p>
               <p className="mt-4 text-muted-foreground">
-                Whether you are a fan of football, rugby, tennis, basketball, F1 or motorsports, all major
-                sporting events are included in your subscription. Follow England, Scotland, Wales
-                and Northern Ireland in all their international competitions.
+                Consultez nos pages de compatibilité pour <Link href="/iptv-android" className="text-brand hover:underline">Android</Link>, <Link href="/iptv-lg" className="text-brand hover:underline">LG webOS</Link> et <Link href="/iptv-windows" className="text-brand hover:underline">Windows</Link>.
               </p>
             </div>
+
             <div>
-              <h2 className="text-2xl font-bold text-white">Why choose doubleclick iptv in the UK?</h2>
-              <p className="mt-2 text-muted-foreground">
-                doubleclick iptv stands out with a service specially designed for UK users. Our
-                customer support is available in English 24 hours a day, 7 days a week on WhatsApp. Payments accepted in pounds
-                sterling via several secure methods (credit card, PayPal, bank transfer). Our servers are optimised for
-                the UK, guaranteeing minimal latency and optimal streaming quality.
-              </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  English-speaking customer support, response within 30 minutes
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  Payment in pounds sterling with no exchange fees
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  Dedicated servers in Europe for reduced latency
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  Contact us on WhatsApp to discover our offers and subscriptions
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  VOD catalogue with the latest movie and TV series releases
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold text-white">Installation on your devices in the UK</h2>
-              <p className="mt-2 text-muted-foreground">
-                doubleclick iptv is compatible with all devices used by UK households. Whether you have
-                a Samsung Smart TV Tizen, an LG webOS, a Sony Bravia Android TV, an iPhone, an Android smartphone,
-                a Windows PC or a Mac, our app works perfectly.
-              </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <Link href="/iptv-samsung" className="text-brand hover:underline">IPTV on Samsung Smart TV</Link>
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <Link href="/iptv-lg" className="text-brand hover:underline">IPTV on LG Smart TV</Link>
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <Link href="/iptv-android" className="text-brand hover:underline">IPTV on Android TV and mobile</Link>
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <Link href="/iptv-iphone" className="text-brand hover:underline">IPTV on iPhone and iPad</Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold text-white">About IPTV in the UK</h2>
-              <p className="mt-2 text-muted-foreground">
-                IPTV is an increasingly popular solution in the UK for replacing expensive traditional TV
-                subscriptions. With doubleclick iptv, you get a complete catalogue of UK
-                and international channels, a rich VOD library, and English-speaking customer service.
-                Installation is simple and fast on all devices.
+              <h2 className="text-2xl font-bold text-white">Préparer sa connexion en France</h2>
+              <p className="mt-2 text-muted-foreground leading-relaxed">
+                La stabilité compte davantage que le débit maximal annoncé. Pour un téléviseur fixe, utilisez un câble Ethernet lorsque cela est possible. En Wi-Fi, rapprochez l’appareil du routeur, privilégiez la bande 5 GHz et évitez les téléchargements importants pendant la lecture. La fibre convient particulièrement aux foyers utilisant plusieurs écrans.
               </p>
               <p className="mt-4 text-muted-foreground">
-                To learn more about how it works and technical aspects, check our
-                <Link href="/iptv-guide" className="text-brand hover:underline"> complete IPTV guide</Link> or our
-                <Link href="/faq" className="text-brand hover:underline"> FAQ</Link>.
+                Notre <Link href="/blog/iptv-no-interruptions-network-optimization" className="text-brand hover:underline">guide d’optimisation du réseau</Link> détaille les réglages Wi-Fi, Ethernet et QoS.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold text-white">Installation, activation et assistance</h2>
+              <p className="mt-2 text-muted-foreground leading-relaxed">
+                L’installation concerne le téléchargement et le réglage du lecteur. L’activation commence après réception des identifiants associés à votre compte. Conservez l’adresse du portail, le nom d’utilisateur et le mot de passe dans un endroit sûr et ne les publiez jamais.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-4 text-sm">
+                <Link href="/iptv-installation" className="text-brand hover:underline">Installer un lecteur</Link>
+                <Link href="/iptv-activation" className="text-brand hover:underline">Activer son compte</Link>
+                <Link href="/support" className="text-brand hover:underline">Demander de l’aide</Link>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-card p-6">
+              <h2 className="text-xl font-bold text-white">Utilisation autorisée uniquement</h2>
+              <p className="mt-2 text-muted-foreground leading-relaxed">
+                Utilisez uniquement des abonnements et contenus pour lesquels vous disposez d’un accès autorisé. La disponibilité d’un lecteur ou d’un protocole ne donne aucun droit sur les chaînes, films ou programmes transmis.
               </p>
             </div>
           </div>
         </div>
       </section>
+
       <section className="py-20 bg-muted/50">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-white text-center">Frequently asked questions about IPTV UK</h2>
-          <div className="mt-8">
-            <FAQAccordion items={faqItems} />
-          </div>
-          <p className="mt-8 text-center text-muted-foreground">
-            Have other questions? Contact our <Link href="/support" className="text-brand hover:underline">English-speaking support</Link>.
-          </p>
+          <h2 className="text-2xl font-bold text-white text-center">Questions fréquentes pour les utilisateurs en France</h2>
+          <div className="mt-8"><FAQAccordion items={faqItems} /></div>
         </div>
       </section>
-      <CTASection
-        title="Discover IPTV in the UK with doubleclick iptv"
-        subtitle="All your favourite UK channels, live sports and VOD. Contact us on WhatsApp to discover our offers."
-      />
+      <CTASection title="Besoin d’aide pour votre appareil ?" subtitle="Indiquez le modèle et la version de votre appareil pour obtenir des conseils de configuration adaptés." />
     </>
   )
 }

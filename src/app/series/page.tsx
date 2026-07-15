@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react"
 import { Search, Tv } from "lucide-react"
+import Link from "next/link"
 import MediaCard from "@/components/MediaCard"
 import SchemaMarkup from "@/components/SchemaMarkup"
 import CTASection from "@/components/CTASection"
@@ -100,6 +101,15 @@ export default function SeriesPage() {
         </div>
       </section>
 
+      <section className="py-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white">Organize episodic viewing</h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">The series page focuses on finding episodic programmes by title, genre and season recency. Before starting, confirm the episode number, preferred audio track and subtitle availability in your authorized catalogue. Availability changes by region and licensing period.</p>
+          <h2 className="mt-8 text-2xl font-bold text-white">Keep track across devices</h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">Use player favourites or watch-history features when available, but avoid sharing account credentials between unsupported devices. Browse movies and series together from the <Link href="/vod" className="text-brand hover:underline">VOD hub</Link>, or learn how player categories and on-demand playback work in the <Link href="/iptv-vod" className="text-brand hover:underline">IPTV VOD guide</Link>.</p>
+        </div>
+      </section>
+
       <section className="py-20 bg-muted/50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white">Top Trending Series</h2>
@@ -113,7 +123,7 @@ export default function SeriesPage() {
 
       <CTASection
         title="Access all our series in streaming"
-        subtitle="Subscribe to enjoy the full catalogue in HD and 4K."
+        subtitle="Organize series discovery and confirm episode availability in your authorized catalogue."
       />
     </>
   )

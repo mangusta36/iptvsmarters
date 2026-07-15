@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Thomas M.",
     role: "Premium Subscriber",
-    content: "Incredible service! Over 25,000 channels, perfect 4K quality on my Samsung TV. WhatsApp support responds in 5 minutes. Highly recommended.",
+    content: "The setup checklist made it easier to identify my Samsung TV model and choose the appropriate installation steps.",
     rating: 5,
   },
   {

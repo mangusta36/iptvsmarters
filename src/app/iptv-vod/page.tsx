@@ -6,21 +6,22 @@ import CTASection from "@/components/CTASection"
 import { siteConfig, absoluteUrl } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "IPTV VOD - Video on Demand: movies & TV series",
-  description: "IPTV VOD: access over 100,000 movies and TV series in unlimited streaming with your doubleclick iptv subscription. Latest releases, classics, popular series and documentaries.",
+  title: "How IPTV VOD works - On-demand playback explained",
+  description: "Learn how IPTV VOD categories, search, playback quality and device support work, and how on-demand viewing differs from live TV and catch-up.",
   openGraph: {
-    title: "IPTV VOD - Video on Demand: movies and TV series streaming",
-    description: "IPTV VOD: access over 100,000 movies and TV series in unlimited streaming with your doubleclick iptv subscription.",
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
+    title: "How IPTV VOD works - On-demand playback explained",
+    description: "Understand IPTV VOD categories, playback, device support and the difference between on-demand content and catch-up TV.",
     url: absoluteUrl("/iptv-vod"),
   },
   alternates: { canonical: absoluteUrl("/iptv-vod") },
 }
 
 const faqItems = [
-  { question: "What is IPTV VOD?", answer: "VOD (Video On Demand) lets you watch movies and TV series on demand, whenever you want, without fixed schedules. Over 100,000 titles are available." },
-  { question: "What VOD catalogue is available?", answer: "Over 100,000 titles: recent films, cinema classics, popular series, documentaries, kids content, and shows. The catalogue is updated regularly." },
-  { question: "Are the latest cinema releases available?", answer: "Yes, we regularly add the latest cinema releases and new series as soon as they become available for streaming." },
-  { question: "Is there a viewing limit?", answer: "No, VOD is unlimited. You can watch as many movies and series as you want, with no time limit." },
+  { question: "What is IPTV VOD?", answer: "VOD (Video On Demand) is content selected from a catalogue rather than watched at a fixed live broadcast time." },
+  { question: "What VOD catalogue is available?", answer: "Catalogue availability depends on the authorized provider, region, account and licensing period. Check the categories shown after signing in." },
+  { question: "Are new releases always available?", answer: "No. Availability varies by provider and content rights. A player cannot add a title that is not included in the authorized account." },
+  { question: "Is there a viewing limit?", answer: "Limits depend on the account terms, simultaneous-connection allowance and provider policy." },
   { question: "Is VOD available on all devices?", answer: "Yes, VOD works on all devices compatible with doubleclick iptv: Smart TV, Android, iOS, Windows, Mac." },
   { question: "What is the video quality of VOD?", answer: "VOD content is available in HD, Full HD and 4K depending on the title. Quality automatically adapts to your connection." },
 ]
@@ -44,21 +45,19 @@ export default function IPTVVODPage() {
             <span className="inline-flex items-center rounded-full bg-brand/10 border border-brand/20 px-4 py-1.5 text-xs font-medium text-brand mb-4">
               Video on Demand
             </span>
-            <h1 className="text-4xl font-bold text-white sm:text-5xl">IPTV VOD</h1>
+            <h1 className="text-4xl font-bold text-white sm:text-5xl">How IPTV VOD works</h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Access over 100,000 movies and TV series in unlimited streaming with your doubleclick iptv subscription.
-              Video on demand (VOD) offers a massive catalogue: latest cinema releases, popular series,
-              timeless classics, documentaries and content for the whole family. Everything is available whenever you want.
+              This informational guide explains how video on demand is organized inside an IPTV player,
+              how playback differs from live TV and catch-up, and what to check when a title or category is unavailable.
             </p>
           </div>
           <div className="mt-12 space-y-12">
             <div>
-              <h2 className="text-2xl font-bold text-white">VOD catalogue: movies and series</h2>
+              <h2 className="text-2xl font-bold text-white">Understanding VOD categories</h2>
               <p className="mt-2 text-muted-foreground">
-                Our VOD catalogue is one of the richest on the market. It includes the latest cinema releases,
-                the most popular series, cinema classics, fascinating documentaries, kids
-                content, shows and much more. Each category is carefully organised to help
-                you easily find what you are looking for.
+                IPTV players commonly organize authorized on-demand content into movies, series, documentaries
+                and family categories. The exact titles are controlled by the account provider and can change
+                with regional rights or catalogue updates; the player itself does not supply content.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2 text-muted-foreground">
@@ -67,7 +66,7 @@ export default function IPTVVODPage() {
                 </li>
                 <li className="flex items-start gap-2 text-muted-foreground">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <strong className="text-white">Series:</strong> popular UK and international series, Netflix, HBO, Amazon, Disney+ series
+                  <strong className="text-white">Series:</strong> episodic programmes grouped by season when that information is supplied
                 </li>
                 <li className="flex items-start gap-2 text-muted-foreground">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
@@ -99,10 +98,9 @@ export default function IPTVVODPage() {
             <div>
               <h2 className="text-2xl font-bold text-white">Quality and formats available</h2>
               <p className="mt-2 text-muted-foreground">
-                VOD content is available in different qualities to suit your connection and
-                equipment. Most recent titles are available in Full HD (1080p) and 4K Ultra HD.
-                The app automatically adjusts quality based on your Internet speed for smooth
-                playback.
+                Available quality depends on the source, account and device. Some players select
+                a suitable stream automatically; others require a manual quality choice. Start
+                with a stable setting and increase it only after playback is reliable.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2 text-muted-foreground">
@@ -127,22 +125,21 @@ export default function IPTVVODPage() {
                 programmes from the last 7 days after their broadcast.
               </p>
               <p className="mt-4 text-muted-foreground">
-                With your doubleclick iptv subscription, you benefit from both services. Enjoy
-                <Link href="/iptv-replay" className="text-brand hover:underline"> catch-up</Link> to replay your
-                shows and VOD for your movie nights and unlimited series.
+                If your authorized account includes both services, use
+                <Link href="/iptv-replay" className="text-brand hover:underline"> catch-up</Link> for recently
+                broadcast programmes and VOD for items selected from the provider&apos;s catalogue.
               </p>
             </div>
             <div>
               <h2 className="text-2xl font-bold text-white">VOD catalogue updates</h2>
               <p className="mt-2 text-muted-foreground">
-                Our VOD catalogue is regularly updated with the latest cinema releases, new episodes
-                of popular series, and exclusive content. We add dozens of new
-                titles each week to enrich your streaming experience.
+                Catalogue changes are controlled by the authorized provider. Refresh the player data
+                before reporting a missing category, then confirm whether the item remains included
+                for your region and account.
               </p>
               <p className="mt-4 text-muted-foreground">
-                You can follow catalogue updates on our <Link href="/blog" className="text-brand hover:underline">blog</Link> and social
-                media. Personalised suggestions are also offered in the app
-                based on your viewing habits.
+                Browse the <Link href="/vod" className="text-brand hover:underline">VOD discovery hub</Link> for
+                movie and series examples, or contact the account provider when availability differs from the supplied catalogue.
               </p>
             </div>
           </div>
@@ -160,8 +157,8 @@ export default function IPTVVODPage() {
         </div>
       </section>
       <CTASection
-        title="Access over 100,000 movies and series"
-        subtitle="Unlimited VOD included in all our subscriptions. Latest releases, popular series and classics. Contact us on WhatsApp."
+        title="Need help with on-demand playback?"
+        subtitle="Contact support with your device, player name and exact playback error."
       />
     </>
   )

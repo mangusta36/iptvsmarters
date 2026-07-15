@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV Smart TV - Watch IPTV on all Smart TVs",
   description: "Complete guide to install and set up doubleclick iptv on all Smart TVs: Samsung Tizen, LG webOS, Sony Android TV, Philips and more. Premium IPTV setup for your smart TV.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV Smart TV - Watch IPTV on all Smart TVs",
     description: "Complete guide to install and set up doubleclick iptv on all Smart TVs: Samsung, LG, Sony, Philips.",
     url: absoluteUrl("/iptv-smart-tv"),

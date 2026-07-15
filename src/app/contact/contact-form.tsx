@@ -17,7 +17,7 @@ const breadcrumbSchema = {
 }
 
 const faqItems = [
-  { question: "How can I contact doubleclick iptv?", answer: "All doubleclick iptv support is via WhatsApp at +212 753936672. It is the fastest way to get a response within 30 minutes." },
+  { question: "How can I contact doubleclick iptv?", answer: "Use the WhatsApp contact shown on this page. Include your device model, player name and exact error; response times vary with request volume." },
   { question: "What are your opening hours?", answer: "The doubleclick iptv support team is available 24/7, 365 days a year. Send us a WhatsApp message anytime and we will respond promptly." },
   { question: "How do I get a doubleclick iptv subscription?", answer: "Contact us directly via WhatsApp at +212 753936672 to choose your plan and receive your credentials. We will guide you through the process." },
   { question: "What is the activation time for doubleclick iptv?", answer: "Your doubleclick iptv subscription is activated within 24 hours maximum after payment confirmation via WhatsApp. Most activations happen within 2 hours." },
@@ -78,7 +78,7 @@ export default function ContactForm() {
               <p className="mt-2 text-lg text-muted-foreground">
                 <span className="text-white font-semibold">+212 753936672</span>
               </p>
-              <p className="mt-1 text-sm text-brand">Response guaranteed within 30 minutes</p>
+              <p className="mt-1 text-sm text-brand">Response times vary with request volume</p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
                 <a
                   href={`https://wa.me/${siteConfig.whatsappNumber}`}

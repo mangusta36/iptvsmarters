@@ -4,17 +4,17 @@ import Link from "next/link"
 import PricingCards from "@/components/PricingCards"
 import FAQAccordion from "@/components/FAQAccordion"
 import SchemaMarkup from "@/components/SchemaMarkup"
-import Testimonials from "@/components/Testimonials"
 import CTASection from "@/components/CTASection"
 import TrustBadges from "@/components/TrustBadges"
 import { siteConfig, absoluteUrl } from "@/lib/site-config"
 
 export const metadata: Metadata = {
   title: "IPTV Subscription - Premium Plans & Prices 2026",
-  description: "doubleclick iptv subscription plans from £37/3mo: 25,000+ live channels, 100,000+ VOD movies & series in HD & 4K. Multi-device support, anti-buffer technology, 24/7 support. Start streaming today.",
+  description: "doubleclick iptv subscription plans from £37/3mo: available live channels, on-demand content movies & series in HD & 4K. Multi-device support, anti-buffer technology, 24/7 support. Start streaming today.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "doubleclick iptv Subscription Plans",
-    description: "Choose your doubleclick iptv subscription plan: 25,000+ channels, 100,000+ VOD, HD & 4K, multi-device. From £37/3mo for premium IPTV.",
+    description: "Choose your doubleclick iptv subscription plan: available channels, on-demand content, HD & 4K, multi-device. From £37/3mo for premium IPTV.",
     url: absoluteUrl("/abonnement"),
   },
   alternates: { canonical: absoluteUrl("/abonnement") },
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
 const guarantees = [
   { icon: Shield, title: "Satisfied or Refunded", desc: "7-day guarantee to test your doubleclick iptv service risk-free. If you are not satisfied, we will refund your payment." },
   { icon: Clock, title: "Fast Activation", desc: "doubleclick iptv subscription activated within 24 hours after payment confirmation. Most activations happen within 2 hours." },
-  { icon: Headphones, title: "24/7 Support", desc: "doubleclick iptv support available 7 days a week via WhatsApp. Average response time under 30 minutes." },
+  { icon: Headphones, title: "24/7 Support", desc: "doubleclick iptv support available 7 days a week via WhatsApp. Response times vary with request volume." },
   { icon: RefreshCw, title: "No Commitment", desc: "Cancel your doubleclick iptv plan anytime, no fees or penalties. No long-term contracts. You are in control." },
   { icon: CreditCard, title: "Secure Payment", desc: "PayPal, bank transfer and cryptocurrencies accepted for your doubleclick iptv subscription. Your information is always protected." },
-  { icon: CheckCircle, title: "Guaranteed Quality", desc: "HD, Full HD and 4K with anti-buffer technology and 99.9% server uptime for uninterrupted doubleclick iptv streaming." },
+  { icon: CheckCircle, title: "Guaranteed Quality", desc: "HD, Full HD and 4K with anti-buffer technology and monitored service availability and practical playback support." },
   { icon: Globe, title: "Works Worldwide", desc: "Use your doubleclick iptv subscription anywhere in the world. Perfect for travellers, expats and international families." },
   { icon: Smartphone, title: "All Devices", desc: "Compatible with Smart TV, Fire TV Stick, Android, iOS, Windows, Mac. One doubleclick iptv subscription covers everything." },
-  { icon: Star, title: "Premium Content", desc: "25,000+ live channels, 100,000+ VOD movies & series with your doubleclick iptv subscription. Sports, news, entertainment and more." },
+  { icon: Star, title: "Premium Content", desc: "available live channels, on-demand content movies & series with your doubleclick iptv subscription. Sports, news, entertainment and more." },
 ]
 
 const faqItems = [
@@ -39,7 +39,7 @@ const faqItems = [
   { question: "Is there a minimum commitment period?", answer: "No, no commitment. You can cancel your doubleclick iptv plan at any time. Quarterly and annual plans offer better value with significant discounts." },
   { question: "What if I have installation problems?", answer: "Our doubleclick iptv technical support team is available 24/7 to help you via WhatsApp. Installation is guided and only takes a few minutes." },
   { question: "Can I use my doubleclick iptv subscription on multiple devices?", answer: "Yes, depending on your plan: 1, 2 or 3 simultaneous connections on different devices. Each person watches their own channel with their doubleclick iptv subscription." },
-  { question: "What channels are included with doubleclick iptv?", answer: "25,000+ live channels across all categories: sports (Premier League, NFL, UFC, F1), movies, 24/7 news, kids, documentaries, music, international channels in 40+ languages — included with every doubleclick iptv plan." },
+  { question: "What channels are included with doubleclick iptv?", answer: "available live channels across all categories: sports (Premier League, NFL, UFC, F1), movies, 24/7 news, kids, documentaries, music, international channels in 40+ languages — included with every doubleclick iptv plan." },
   { question: "Is 4K streaming available on doubleclick iptv?", answer: "Yes, 4K Ultra HD streaming is available on doubleclick iptv for supported channels and VOD content. Requires 25+ Mbps internet connection and a compatible device." },
 ]
 
@@ -75,8 +75,8 @@ export default function AbonnementPage() {
             </span>
             <h1 className="text-4xl font-bold text-white sm:text-5xl">doubleclick iptv Plans</h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Choose the doubleclick iptv subscription that suits your needs. All our plans include 25,000+ TV channels,
-              100,000+ movies & series on demand, HD & 4K streaming, 24/7 support and a satisfied or refunded guarantee.
+              Choose the doubleclick iptv subscription that suits your needs. All our plans include a broad selection TV channels,
+              an on-demand movie and series catalogue on demand, HD & 4K streaming, 24/7 support and a satisfied or refunded guarantee.
             </p>
           </div>
           <div className="mt-8">
@@ -114,8 +114,8 @@ export default function AbonnementPage() {
           </div>
           <div className="mt-10 max-w-4xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              "25,000+ live TV channels worldwide",
-              "100,000+ movies & series on demand",
+              "available live channels worldwide",
+              "an on-demand movie and series catalogue on demand",
               "HD, Full HD & 4K Ultra HD quality",
               "Anti-buffer streaming technology",
               "Electronic Program Guide (EPG)",
@@ -145,7 +145,6 @@ export default function AbonnementPage() {
           </div>
         </div>
       </section>
-      <Testimonials />
       <CTASection title="Ready to join doubleclick iptv?" subtitle="Contact us on WhatsApp to discover our IPTV subscription plans." />
     </>
   )

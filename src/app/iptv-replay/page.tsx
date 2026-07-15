@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV Catch-up TV - Watch your programmes on replay",
   description: "IPTV Catch-up TV (Replay): watch your programmes up to 7 days after broadcast. Never miss your favourite shows again with doubleclick iptv premium IPTV service.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV Catch-up TV - Watch your programmes on replay",
     description: "IPTV Catch-up TV (Replay): watch your programmes up to 7 days after broadcast.",
     url: absoluteUrl("/iptv-replay"),
@@ -109,7 +110,7 @@ export default function IPTVReplayPage() {
                 </li>
                 <li className="flex items-start gap-2 text-muted-foreground">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                  <strong className="text-white">VOD:</strong> permanent catalogue of over 100,000 movies and TV series. Available on demand with no limits.
+                  <strong className="text-white">VOD:</strong> permanent catalogue of an on-demand catalogue of movies and TV series. Available on demand with no limits.
                 </li>
               </ul>
               <p className="mt-4 text-muted-foreground">
@@ -120,7 +121,7 @@ export default function IPTVReplayPage() {
               <h2 className="text-2xl font-bold text-white">Channels available on catch-up</h2>
               <p className="mt-2 text-muted-foreground">
                 Most major UK channels offer catch-up: BBC One, BBC Two, ITV, Channel 4, Channel 5, Sky One,
-                and many more. Sports channels like Sky Sports, BT Sport and
+                and many more. Sports channels like authorized sports broadcaster, BT Sport and
                 Eurosport also offer catch-up for shows and highlights.
               </p>
               <p className="mt-4 text-muted-foreground">

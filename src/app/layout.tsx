@@ -23,6 +23,8 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
+const absoluteSocialImage = `${siteConfig.url}${siteConfig.ogImage}`
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -40,11 +42,11 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: "doubleclick iptv | Premium IPTV Subscription",
     description:
-      "Premium IPTV subscription with 25,000+ live channels, 100,000+ VOD movies & series. HD & 4K streaming, 24/7 support.",
+      "Premium IPTV subscription with available live channels, on-demand content movies & series. HD & 4K streaming, 24/7 support.",
     url: siteConfig.url,
     images: [
       {
-        url: `${siteConfig.url}/og-image.svg`,
+        url: absoluteSocialImage,
         width: 1200,
         height: 630,
         alt: siteConfig.name,
@@ -57,8 +59,8 @@ export const metadata: Metadata = {
     creator: "@doubleclicktv",
     title: "doubleclick iptv - Premium IPTV Subscription",
     description:
-      "25,000+ live channels, 100,000+ VOD movies & series. Fast installation and 24/7 support.",
-    images: [`${siteConfig.url}/og-image.svg`],
+      "available live channels, on-demand content movies & series. Fast installation and 24/7 support.",
+    images: [absoluteSocialImage],
   },
   robots: {
     index: true,

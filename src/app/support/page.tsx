@@ -8,8 +8,9 @@ import { siteConfig, absoluteUrl } from "@/lib/site-config"
 
 export const metadata: Metadata = {
   title: "IPTV Support - Help & Assistance 24/7",
-  description: "doubleclick iptv support and help centre. Setup guides, troubleshooting tips, connection fixes, video quality optimisation and 24/7 WhatsApp assistance for your doubleclick iptv subscription. Response within 30 minutes.",
+  description: "doubleclick iptv support and help centre. Setup guides, troubleshooting tips, connection fixes, video quality optimisation and 24/7 WhatsApp assistance for your doubleclick iptv subscription. Response times vary with request volume.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "doubleclick iptv Support - 24/7 Assistance",
     description: "Need help with your doubleclick iptv subscription? Setup, troubleshooting, billing and technical support available 24/7 via WhatsApp.",
     url: absoluteUrl("/support"),
@@ -51,7 +52,7 @@ const troubleshootingSteps = [
 ]
 
 const faqItems = [
-  { question: "How do I reset my doubleclick iptv password?", answer: "Contact us via WhatsApp with your user ID. We will send you a new password within 30 minutes for your doubleclick iptv account." },
+  { question: "How do I reset my doubleclick iptv password?", answer: "Contact us via WhatsApp with your user ID. We will send you a new password as soon as the request has been verified." },
   { question: "My subscription has expired, how do I renew?", answer: "Contact us via WhatsApp to renew. Your doubleclick iptv subscription will be reactivated immediately after payment confirmation." },
   { question: "Can I transfer my doubleclick iptv subscription to a new device?", answer: "Yes, just install the app on your new device and log in with your current doubleclick iptv credentials. Your subscription is linked to your account, not your device." },
   { question: "What if a channel is not working on doubleclick iptv?", answer: "First check your internet connection. If the issue persists, contact doubleclick iptv support with the channel name and we will investigate." },
@@ -99,7 +100,7 @@ export default function SupportPage() {
             </p>
             <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
               Whether you need help with doubleclick iptv setup, or are experiencing a technical issue,
-              we are here for you. Our expert team responds via WhatsApp within 30 minutes on average.
+              we are here for you. Our expert team responds via WhatsApp as soon as request volume allows.
             </p>
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -166,7 +167,7 @@ export default function SupportPage() {
             <MessageCircle className="mx-auto h-10 w-10 text-brand" />
             <h2 className="mt-4 text-2xl font-bold text-white">Priority doubleclick iptv Support</h2>
             <p className="mt-1 text-lg text-white font-semibold">+212 753936672</p>
-            <p className="mt-1 text-muted-foreground">Guaranteed response within 30 minutes, 7 days a week</p>
+            <p className="mt-1 text-muted-foreground">Response times vary with request volume</p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href={`https://wa.me/${siteConfig.whatsappNumber}`}

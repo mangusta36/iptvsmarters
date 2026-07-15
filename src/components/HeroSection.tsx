@@ -10,7 +10,7 @@ interface HeroSectionProps {
   badge?: string
 }
 
-const goldTokens = ["HD & 4K", "Ultra HD", "25,000+ Channels"]
+const goldTokens = ["HD & 4K", "Ultra HD", "available channels"]
 
 function renderTitle(text: string): ReactNode {
   const parts: ReactNode[] = []
@@ -109,7 +109,7 @@ export default function HeroSection({
           <div className="mt-12 flex flex-wrap items-center gap-x-12 gap-y-4">
             <span className="flex items-center gap-2.5 text-sm text-gray-400">
               <Shield className="h-4 w-4 text-brand" />
-              <span>25,000+ Channels</span>
+              <span>available channels</span>
             </span>
             <span className="flex items-center gap-2.5 text-sm text-gray-400">
               <Zap className="h-4 w-4 text-accent" />

@@ -156,6 +156,9 @@ export default function Footer() {
               &copy; {currentYear} {siteConfig.name}. All rights reserved.
             </p>
             <div className="flex gap-4">
+              <Link href="/a-propos" className="text-xs text-muted-foreground hover:text-brand transition-colors duration-200">
+                About
+              </Link>
               <Link href="/legal-notice" className="text-xs text-muted-foreground hover:text-brand transition-colors duration-200">
                 Legal Notice
               </Link>

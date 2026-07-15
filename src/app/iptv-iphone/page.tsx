@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "IPTV iPhone and iPad - Install doubleclick iptv on iOS",
   description: "Complete guide to install doubleclick iptv on iPhone and iPad. App available on the App Store. Enjoy your IPTV channels on the go with premium IPTV streaming on iOS.",
   openGraph: {
+    images: [{ url: absoluteUrl("/og-image.svg"), width: 1200, height: 630, alt: "doubleclick iptv" }],
     title: "IPTV iPhone and iPad - Install doubleclick iptv on iOS",
     description: "Complete guide to install doubleclick iptv on iPhone and iPad. Enjoy your IPTV channels on the go on iOS.",
     url: absoluteUrl("/iptv-iphone"),
