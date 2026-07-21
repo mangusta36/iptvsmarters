@@ -1,5 +1,13 @@
 {
   "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "doubleclicktv.vip" }],
+      "destination": "https://www.doubleclicktv.vip/:path*",
+      "permanent": true
+    }
+  ],
   "buildCommand": "next build",
   "outputDirectory": ".next",
   "installCommand": "npm install"

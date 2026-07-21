@@ -38,7 +38,7 @@ const contentLinks = [
   { label: "Movies", href: "/films" },
   { label: "Series", href: "/series" },
   { label: "VOD Catalogue", href: "/vod" },
-  { label: "IPTV in UK", href: "/iptv-france" },
+  { label: "IPTV in France", href: "/iptv-france" },
 ]
 
 export default function Footer() {

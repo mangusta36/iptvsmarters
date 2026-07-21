@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import SchemaMarkup from "@/components/SchemaMarkup"
 import FAQAccordion from "@/components/FAQAccordion"
 import { blogPosts } from "@/lib/blog-data"
@@ -28,6 +29,7 @@ export async function generateMetadata({
       description: post.description,
       type: "article",
       publishedTime: post.publishedAt,
+      modifiedTime: post.modifiedAt,
       authors: [siteConfig.name],
       url: absoluteUrl(`/blog/${slug}`),
       images: [{ url: post.image, width: 800, height: 450, alt: post.title }],
@@ -44,6 +46,15 @@ export async function generateMetadata({
 
 function renderContent(html: string) {
   return { __html: html }
+}
+
+function formatBlogDate(value: string) {
+  return new Date(`${value}T00:00:00.000Z`).toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  })
 }
 
 export default async function BlogPostPage({
@@ -66,8 +77,14 @@ export default async function BlogPostPage({
     description: post.description,
     image: post.image,
     datePublished: post.publishedAt,
+    dateModified: post.modifiedAt,
+    mainEntityOfPage: absoluteUrl(`/blog/${slug}`),
     author: { "@type": "Organization", name: siteConfig.name },
-    publisher: { "@type": "Organization", name: siteConfig.name },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      logo: { "@type": "ImageObject", url: absoluteUrl("/logo.svg") },
+    },
   }
 
   const breadcrumbSchema = {
@@ -102,30 +119,43 @@ export default async function BlogPostPage({
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-3 lg:gap-12">
             <div className="lg:col-span-2">
+              <nav aria-label="Breadcrumb" className="mb-6 text-sm text-muted-foreground">
+                <ol className="flex flex-wrap items-center gap-2">
+                  <li><Link href="/" className="hover:text-brand">Home</Link></li>
+                  <li aria-hidden="true">/</li>
+                  <li><Link href="/blog" className="hover:text-brand">Blog</Link></li>
+                  <li aria-hidden="true">/</li>
+                  <li aria-current="page" className="text-white">{post.title}</li>
+                </ol>
+              </nav>
               <div className="mb-8">
                 <span className="inline-flex rounded-full bg-brand/10 px-3 py-1 text-xs font-medium text-brand">
                   {post.category}
                 </span>
                 <h1 className="mt-3 text-3xl font-bold text-white sm:text-4xl">{post.title}</h1>
-                <div className="mt-4 flex items-center gap-4 text-sm text-muted-foreground">
-                  <time dateTime={post.publishedAt}>
-                    {new Date(post.publishedAt).toLocaleDateString("en-GB", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </time>
+                <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+                  <span>Published <time dateTime={post.publishedAt}>
+                    {formatBlogDate(post.publishedAt)}
+                  </time></span>
+                  {post.modifiedAt !== post.publishedAt && (
+                    <><span>&middot;</span><span>Updated <time dateTime={post.modifiedAt}>
+                      {formatBlogDate(post.modifiedAt)}
+                    </time></span></>
+                  )}
                   <span>&middot;</span>
                   <span>{post.readingTime}</span>
                 </div>
               </div>
               {post.image && (
                 <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-8">
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.title}
+                    fill
+                    sizes="(min-width: 1024px) 66vw, 100vw"
                     className="object-cover w-full h-full"
                     loading="eager"
+                    priority
                   />
                 </div>
               )}
@@ -139,19 +169,6 @@ export default async function BlogPostPage({
                   <FAQAccordion items={post.faq} />
                 </div>
               )}
-              <div className="mt-12 border-t border-border pt-8 text-center">
-                <p className="text-muted-foreground mb-4">
-                  Need help with your IPTV installation?
-                </p>
-                <a
-                  href={`https://wa.me/${siteConfig.whatsappNumber}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-lg bg-success px-6 py-3 text-sm font-semibold text-white hover:bg-success-hover transition-colors"
-                >
-                  Contact support
-                </a>
-              </div>
             </div>
             <aside className="mt-12 lg:mt-0">
               <div className="sticky top-24">

@@ -1,4 +1,5 @@
 import { siteConfig } from './site-config';
+import { editorialOverrides, removedBlogSlugs } from './editorial-content';
 
 export interface BlogPost {
   slug: string;
@@ -10,10 +11,11 @@ export interface BlogPost {
   faq: { question: string; answer: string }[];
   keywords: string[];
   publishedAt: string;
+  modifiedAt: string;
   readingTime: string;
 }
 
-export const blogPosts: BlogPost[] = [
+const originalBlogPosts: BlogPost[] = [
   {
     slug: 'iptv-guide',
     title: 'Complete IPTV Guide for Beginners: Installation, Subscription & Tips 2026',
@@ -216,6 +218,7 @@ export const blogPosts: BlogPost[] = [
     ],
     keywords: ['complete IPTV guide', 'IPTV beginner', 'IPTV installation', 'IPTV subscription', 'IPTV app', 'doubleclick iptv', 'IPTV streaming', 'IPTV 2026', 'best IPTV', 'how to install IPTV', 'IPTV beginner guide', 'IPTV protocol', 'internet connection IPTV', 'choose IPTV provider'],
     publishedAt: '2026-03-01',
+    modifiedAt: '2026-07-14',
     readingTime: '18 min'
   },
   {
@@ -449,6 +452,7 @@ export const blogPosts: BlogPost[] = [
     ],
     keywords: ['install IPTV Android', 'IPTV Android setup', 'doubleclick iptv', 'IPTV configuration', 'IPTV smartphone', 'IPTV Android TV', 'IPTV app', 'download IPTV app', 'IPTV APK', 'guide IPTV', 'IPTV on Android'],
     publishedAt: '2026-03-05',
+    modifiedAt: '2026-07-14',
     readingTime: '16 min'
   },
   {
@@ -592,6 +596,7 @@ export const blogPosts: BlogPost[] = [
     ],
     keywords: ['install IPTV Samsung', 'Samsung Smart TV IPTV', 'Tizen IPTV', 'Smart IPTV Samsung', 'SS IPTV Samsung', 'IPTV Samsung Tizen', 'Samsung TV streaming', 'IPTV Samsung QLED', 'install IPTV on Samsung TV', 'Samsung Smart Hub IPTV'],
     publishedAt: '2026-03-10',
+    modifiedAt: '2026-07-14',
     readingTime: '14 min'
   },
   {
@@ -747,6 +752,7 @@ export const blogPosts: BlogPost[] = [
     ],
     keywords: ['install IPTV LG', 'LG Smart TV IPTV', 'webOS IPTV', 'Smart IPTV LG', 'SS IPTV LG', 'IPTV LG webOS', 'LG TV streaming', 'IPTV LG OLED', 'install IPTV on LG TV', 'LG Content Store IPTV'],
     publishedAt: '2026-03-15',
+    modifiedAt: '2026-07-14',
     readingTime: '13 min'
   },
   {
@@ -931,6 +937,7 @@ export const blogPosts: BlogPost[] = [
     ],
     keywords: ['IPTV Fire TV Stick', 'Fire TV Stick IPTV', 'install IPTV Fire Stick', 'Fire TV Stick streaming', 'IPTV Amazon Fire TV', 'sideload IPTV Fire Stick', 'Downloader app IPTV', 'Fire TV Stick 4K IPTV', 'best IPTV app Fire Stick', 'Fire TV Stick 4K Max IPTV'],
     publishedAt: '2026-03-20',
+    modifiedAt: '2026-07-14',
     readingTime: '15 min'
   },
   {
@@ -1101,6 +1108,7 @@ export const blogPosts: BlogPost[] = [
     ],
     keywords: ['Xtream Codes API', 'Xtream Codes IPTV', 'IPTV API guide', 'configure Xtream Codes', 'Xtream Codes vs M3U', 'IPTV portal URL', 'Xtream Codes setup', 'IPTV API', 'connect Xtream Codes', 'what is Xtream Codes'],
     publishedAt: '2026-03-25',
+    modifiedAt: '2026-07-14',
     readingTime: '12 min'
   },
   {
@@ -1276,6 +1284,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['M3U playlist', 'M3U IPTV', 'IPTV M3U guide', 'create M3U playlist', 'edit M3U playlist', 'M3U format', 'M3U URL', 'M3U setup', 'M3U IPTV configuration', 'M3U playlist IPTV'],
     publishedAt: '2026-03-28',
+    modifiedAt: '2026-07-14',
     readingTime: '11 min'
   },
   {
@@ -1299,6 +1308,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['IPTV VPN', 'VPN IPTV', 'best VPN for IPTV', 'IPTV privacy', 'VPN streaming', 'ISP throttling', 'NordVPN IPTV', 'ExpressVPN IPTV', 'VPN setup IPTV', 'IPTV security VPN'],
     publishedAt: '2026-04-01',
+    modifiedAt: '2026-07-14',
     readingTime: '19 min'
   },
   {
@@ -1469,6 +1479,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['best IPTV app 2026', 'IPTV app comparison', 'IPTV app review', 'doubleclick iptv app', 'TiviMate review', 'GSE Smart IPTV', 'Perfect Player IPTV', 'OTT Navigator', 'IPTV player', 'best IPTV player'],
     publishedAt: '2026-04-05',
+    modifiedAt: '2026-07-14',
     readingTime: '15 min'
   },
   {
@@ -1686,6 +1697,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['doubleclick iptv vs TiviMate', 'TiviMate vs GSE Smart IPTV', 'IPTV app comparison', 'best IPTV player', 'doubleclick iptv review', 'TiviMate review', 'GSE Smart IPTV review', 'IPTV app 2026', 'IPTV software comparison'],
     publishedAt: '2026-04-10',
+    modifiedAt: '2026-07-14',
     readingTime: '16 min'
   },
   {
@@ -1872,6 +1884,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['4K IPTV', 'IPTV 4K Ultra HD', '4K streaming', 'Ultra HD IPTV', '4K IPTV devices', 'HDR IPTV', '4K IPTV internet speed', '4K channels IPTV', 'Ultra HD streaming', '4K VOD IPTV'],
     publishedAt: '2026-04-15',
+    modifiedAt: '2026-07-14',
     readingTime: '17 min'
   },
   {
@@ -2063,6 +2076,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['IPTV buffering', 'stop IPTV buffering', 'buffering solutions', 'IPTV freezing', 'IPTV loading issues', 'fix IPTV buffering', 'stream buffering fix', 'IPTV network optimization', 'eliminate IPTV buffering', 'IPTV smooth streaming'],
     publishedAt: '2026-04-20',
+    modifiedAt: '2026-07-14',
     readingTime: '18 min'
   },
   {
@@ -2214,6 +2228,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['IPTV security', 'IPTV privacy', 'secure IPTV', 'VPN IPTV', 'IPTV data protection', 'IPTV safe streaming', 'protect IPTV privacy', 'IPTV malware', 'IPTV scam prevention', 'safe IPTV streaming'],
     publishedAt: '2026-04-25',
+    modifiedAt: '2026-07-14',
     readingTime: '13 min'
   },
   {
@@ -2236,6 +2251,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['is IPTV legal', 'IPTV legality UK', 'legal IPTV', 'illegal IPTV', 'IPTV law UK', 'IPTV copyright', 'IPTV legal guide', 'IPTV risks', 'legal IPTV services', 'IPTV UK law'],
     publishedAt: '2026-05-01',
+    modifiedAt: '2026-07-14',
     readingTime: '14 min'
   },
   {
@@ -2419,6 +2435,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['IPTV network optimization', 'buffer-free IPTV', 'IPTV streaming setup', 'optimize network IPTV', 'QoS IPTV', 'router settings IPTV', 'WiFi IPTV', 'Ethernet IPTV', 'mesh network IPTV', 'IPTV without buffering'],
     publishedAt: '2026-05-05',
+    modifiedAt: '2026-07-14',
     readingTime: '15 min'
   },
   {
@@ -2442,6 +2459,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['IPTV Brazil', 'Brazilian TV abroad', 'IPTV for Brazilians', 'Brazilian IPTV channels', 'assistir TV brasileira no exterior', 'Globo IPTV', 'IPTV brasileiro', 'Brazilian channels online', 'IPTV for expats', 'Brazilian IPTV subscription', 'IPTV Portuguese'],
     publishedAt: '2026-07-01',
+    modifiedAt: '2026-07-14',
     readingTime: '14 min'
   },
   {
@@ -2466,6 +2484,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['IPTV sports', 'sports IPTV', 'watch live sports online', 'IPTV Premier League', 'IPTV NFL', 'IPTV UFC', 'sports streaming IPTV', 'live football IPTV', 'IPTV for sports fans', 'best IPTV for sports', 'IPTV sports channels', 'watch football online IPTV', 'IPTV multi-screen sports'],
     publishedAt: '2026-07-05',
+    modifiedAt: '2026-07-14',
     readingTime: '15 min'
   },
   {
@@ -2489,6 +2508,7 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['IPTV for expats', 'watch home country TV abroad', 'IPTV international channels', 'expat TV streaming', 'IPTV overseas', 'watch British TV abroad', 'watch American TV abroad', 'IPTV for international viewers', 'IPTV subscription expat', 'best IPTV for expats', 'international IPTV channels', 'IPTV abroad', 'expat television solution'],
     publishedAt: '2026-07-08',
+    modifiedAt: '2026-07-14',
     readingTime: '16 min'
   },
   {
@@ -2512,6 +2532,23 @@ http://example.com/stream/bbc2.m3u8
     ],
     keywords: ['IPTV vs cable', 'IPTV vs satellite', 'cable TV alternative', 'cut the cord', 'IPTV cost comparison', 'IPTV vs cable TV 2026', 'is IPTV cheaper than cable', 'cable TV savings', 'IPTV cable comparison', 'streaming vs cable', 'cable TV hidden fees', 'satellite TV alternative', 'best cable TV alternative', 'IPTV benefits', 'cord cutting 2026'],
     publishedAt: '2026-07-08',
+    modifiedAt: '2026-07-14',
     readingTime: '17 min'
   },
 ];
+
+export const blogPosts: BlogPost[] = originalBlogPosts
+  .filter((post) => !removedBlogSlugs.has(post.slug))
+  .map((post) => {
+    const override = editorialOverrides[post.slug]
+    if (!override) return post
+
+    return {
+      ...post,
+      ...override,
+      content: (override.content ?? post.content).replaceAll(
+        "/blog/iptv-players-comparison",
+        "/blog/iptv-apps-comparison-2026",
+      ),
+    }
+  })

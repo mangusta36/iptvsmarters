@@ -204,7 +204,7 @@ export default function GuideIPTVPage() {
             <FAQAccordion items={faqItems} />
           </div>
           <p className="mt-8 text-center text-muted-foreground">
-            Compare compatible players in our <Link href="/blog/iptv-players-comparison" className="text-brand hover:underline">player guide</Link>, learn about <Link href="/blog/iptv-4k-ultra-hd-streaming" className="text-brand hover:underline">4K bitrate and device requirements</Link>, or contact <Link href="/support" className="text-brand hover:underline">support</Link>.
+            Compare compatible players in our <Link href="/blog/iptv-apps-comparison-2026" className="text-brand hover:underline">player selection guide</Link>, learn about <Link href="/blog/iptv-4k-ultra-hd-streaming" className="text-brand hover:underline">4K bitrate and device requirements</Link>, or contact <Link href="/support" className="text-brand hover:underline">support</Link>.
           </p>
         </div>
       </section>

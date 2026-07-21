@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "seo:verify": "node scripts/verify-seo.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.18.0",
